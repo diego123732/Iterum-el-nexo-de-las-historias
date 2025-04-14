@@ -1,24 +1,16 @@
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 import historias.Historia;
 import historias.Tutorial;
-import utilidades.ConexionBD;
 import utilidades.GuardadoPartida;
+import utilidades.ManipulacionBD;
 import utilidades.TextoLento;
 import utilidades.TextosAscii;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
-        try {
-            ConexionBD.Conexion();
-            System.out.println("No da error de conexion.");
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-            System.out.println(e.getSQLState());
-            e.printStackTrace();
-        }
+        ManipulacionBD.CrearBDNoExistente();
         boolean salirMenu = false;
         int numeroPartida = 0;
         TextosAscii.resetColor();
