@@ -1,7 +1,10 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "lib\\mysql-connector-j-9.2.0.jar",
+        "c:\\Users\\diego\\Documents\\clase\\fpSuperior\\fundamentos de la programacion\\Version 1.8 Iterum el nexo de las historias\\Version 1.8 Iterum el nexo de las historias codigo\\lib\\mysql-connector-j-9.2.0.jar"
     ]
 }
