@@ -2,7 +2,6 @@ package clases;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.List;
 
 public class Partida {
 
@@ -11,8 +10,7 @@ public class Partida {
     private LocalDateTime fechaFinalPartida;
     private int dineroTotalPartida;
     private double dañoTotalPartida;
-    private Duration duracionPartida; 
-    private List<String> datosGuardados;
+    private Duration duracionPartida;
 
     
 
@@ -71,14 +69,6 @@ public class Partida {
 
     public Duration getDuracionPartida() {
         return duracionPartida;
-    }
-
-    public List<String> getDatosGuardados() {
-        return datosGuardados;
-    }
-
-    public void setDatosGuardados(List<String> datosGuardados) {
-        this.datosGuardados = datosGuardados;
     }
 
     
