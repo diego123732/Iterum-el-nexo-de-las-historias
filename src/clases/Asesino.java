@@ -9,7 +9,7 @@ public class Asesino extends PersonajePrinc {
         super(
             nombre, 
             raza, 
-            Ocupaciones.Paladin, 
+            Ocupaciones.Asesino, 
             15, 
             Ocupaciones.Asesino.getEstadisticas(), // Estadísticas del enum de ocupaciones
             Ocupaciones.Asesino.getEquipamiento(), // Equipamiento del enum de ocupaciones

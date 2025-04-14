@@ -9,7 +9,7 @@ public class Tanque extends PersonajePrinc {
         super(
             nombre, 
             raza, 
-            Ocupaciones.Paladin, 
+            Ocupaciones.Tanque, 
             15, 
             Ocupaciones.Tanque.getEstadisticas(), // Estadísticas del enum de ocupaciones
             Ocupaciones.Tanque.getEquipamiento(), // Equipamiento del enum de ocupaciones

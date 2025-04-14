@@ -70,7 +70,9 @@ abstract public class PersonajePrinc{
 
     public void setDinero(int dinero) {
         this.dinero = dinero;
-        this.partidaPersonaje.setDineroTotalPartida(this.dinero);
+        if (dinero > this.partidaPersonaje.getDineroTotalPartida()) {
+            this.partidaPersonaje.setDineroTotalPartida(this.dinero);
+        }
     }
 
     public int[] getEstadisticas() {

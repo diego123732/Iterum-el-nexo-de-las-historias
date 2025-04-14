@@ -9,7 +9,7 @@ public class Curandero extends PersonajePrinc {
         super(
             nombre, 
             raza, 
-            Ocupaciones.Paladin, 
+            Ocupaciones.Curandero, 
             15, 
             Ocupaciones.Curandero.getEstadisticas(), // Estadísticas del enum de ocupaciones
             Ocupaciones.Curandero.getEquipamiento(), // Equipamiento del enum de ocupaciones

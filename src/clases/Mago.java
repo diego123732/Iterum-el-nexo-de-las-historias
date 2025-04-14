@@ -9,7 +9,7 @@ public class Mago extends PersonajePrinc {
         super(
             nombre, 
             raza, 
-            Ocupaciones.Paladin, 
+            Ocupaciones.Mago, 
             15, 
             Ocupaciones.Mago.getEstadisticas(), // Estadísticas del enum de ocupaciones
             Ocupaciones.Mago.getEquipamiento(), // Equipamiento del enum de ocupaciones

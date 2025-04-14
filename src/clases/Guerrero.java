@@ -9,7 +9,7 @@ public class Guerrero extends PersonajePrinc {
         super(
             nombre, 
             raza, 
-            Ocupaciones.Paladin, 
+            Ocupaciones.Guerrero, 
             15, 
             Ocupaciones.Guerrero.getEstadisticas(), // Estadísticas del enum de ocupaciones
             Ocupaciones.Guerrero.getEquipamiento(), // Equipamiento del enum de ocupaciones

@@ -16,13 +16,13 @@ public class Main {
         TextosAscii.resetColor();
         System.out.println("Bienvenido a Iterum, el nexo de las historias.");
         do {
-            
+
             TextoLento.printSlow("Elija una opcion del menu:");
-            switch (utilidades.LectorBuffRead.leer("1: Historia Principal  2: Tutorial  3: Salir del juego", 1, 3)) {
+            switch (utilidades.LectorBuffRead.leer("1: Historia Principal  2: Tutorial 3: Partidas Guardadas  4: Salir del juego", 1, 4)) {
                 case 1:
                     numeroPartida = GuardadoPartida.elegirPartida();
 
-                    //Y el hueco se lo lleva la historia para meter los datos luego
+                    // Y el hueco se lo lleva la historia para meter los datos luego
                     Historia.historia(numeroPartida);
                     break;
 
@@ -31,6 +31,10 @@ public class Main {
                     break;
 
                 case 3:
+                    GuardadoPartida.devolverContenidoArchivo();
+                    break;
+
+                case 4:
                     System.out.println("Saliendo...");
                     salirMenu = true;
                     break;

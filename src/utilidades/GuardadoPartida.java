@@ -244,7 +244,8 @@ public class GuardadoPartida {
         return datoDevuelto;
     }
 
-    public static void guardarPartida(int numeroPartida, PersonajePrinc personajePrinc) {
+    public static void guardarPartida(int numeroPartida, Partida partida) {
+        PersonajePrinc personajePrinc = partida.getPersonajePrincipalPartida();
         try {
             CambiarDatosPartida("PersonajeNombre", personajePrinc.getNombre(), numeroPartida);
             CambiarDatosPartida("PersonajeRaza", personajePrinc.getRaza().toString(), numeroPartida);
@@ -281,6 +282,7 @@ public class GuardadoPartida {
             Historia += (String.valueOf(personajePrinc.getHistoria()[personajePrinc.getHistoria().length - 1]));
 
             CambiarDatosPartida("PersonajeHistoria", Historia, numeroPartida);
+            ManipulacionBD.GuardarDatos(partida);
         } catch (Exception e) {
             System.out.println("Error al guardar al personaje: " + e.getMessage());
             e.printStackTrace();
@@ -385,5 +387,15 @@ public class GuardadoPartida {
             e.printStackTrace();
         }
         return partidaEmpezada;
+    }
+
+    public static void devolverContenidoArchivo () throws InterruptedException, IOException{
+        List<String> contenidoArchivo = leerArchivo();
+        Iterator<String> contenido = contenidoArchivo.iterator();
+        TextoLento.printSlow("Partidas guardadas: ");
+        while (contenido.hasNext()) {
+            TextoLento.printSlow(contenido.next());
+        }
+        LectorBuffRead.continuarHistoria();
     }
 }

@@ -3,6 +3,8 @@ package clases;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+import utilidades.ManipulacionBD;
+
 public class Partida {
 
     private PersonajePrinc personajePrincipalPartida;
@@ -25,6 +27,7 @@ public class Partida {
         this.dineroTotalPartida = 15;
         this.dañoTotalPartida = 0;
         this.duracionPartida = Duration.between(FECHA_INICIO_PARTIDA, fechaFinalPartida);
+        ManipulacionBD.PrimerGuardarDatos(this);
     }
 
     public PersonajePrinc getPersonajePrincipalPartida() {

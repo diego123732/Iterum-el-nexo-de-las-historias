@@ -115,7 +115,7 @@ public class Historia {
                     partida.setPersonajePrincipalPartida(new Tanque(nombreJugador, razaPersonaje, partida));
                     break;
             }
-            GuardadoPartida.guardarPartida(numeroPartida, partida.getPersonajePrincipalPartida());
+            GuardadoPartida.guardarPartida(numeroPartida, partida);
         }
 
         if (!(partida.getPersonajePrincipalPartida().getHistoria()[PlayerData.HISTORIA_PARTE1.getValue()]
@@ -124,8 +124,8 @@ public class Historia {
             MensajeBase();
             // Historia principal, primera parte
             Parte1.Historia(partida.getPersonajePrincipalPartida());
-            GuardadoPartida.guardarPartida(numeroPartida, partida.getPersonajePrincipalPartida());
-            System.out.println("Partida guardada automaticamente");
+            GuardadoPartida.guardarPartida(numeroPartida, partida);
+            System.out.println("Partida guardada automaticamente...");
         }
         
 
@@ -136,7 +136,7 @@ public class Historia {
 
             // Historia principal, segunda parte
             Parte2.Historia(partida.getPersonajePrincipalPartida());
-            GuardadoPartida.guardarPartida(numeroPartida, partida.getPersonajePrincipalPartida());
+            GuardadoPartida.guardarPartida(numeroPartida, partida);
             TextoLento.printSlow("Partida guardada automaticamente...");
         }
 
@@ -147,7 +147,7 @@ public class Historia {
 
             // Historia principal, tercera parte
             Parte3.Historia(partida.getPersonajePrincipalPartida());
-            GuardadoPartida.guardarPartida(numeroPartida, partida.getPersonajePrincipalPartida());
+            GuardadoPartida.guardarPartida(numeroPartida, partida);
             TextoLento.printSlow("Partida guardada automaticamente...");
         }
 
@@ -156,7 +156,7 @@ public class Historia {
             
             // Historia principal, cuarta parte
             Parte4.Historia(partida.getPersonajePrincipalPartida());
-            GuardadoPartida.guardarPartida(numeroPartida, partida.getPersonajePrincipalPartida());
+            GuardadoPartida.guardarPartida(numeroPartida, partida);
             TextoLento.printSlow("Partida guardada automaticamente...");
         }
     }

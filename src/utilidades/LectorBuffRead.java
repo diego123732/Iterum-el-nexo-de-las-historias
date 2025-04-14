@@ -67,7 +67,7 @@ public class LectorBuffRead{
      * 
      */
     public static void continuarHistoria () throws IOException, InterruptedException{
-        TextoLento.printSlow("Pulse 'enter' para continuar la historia");
+        TextoLento.printSlow("Pulse 'enter' para continuar");
         buffer.readLine();
     }
     /**
