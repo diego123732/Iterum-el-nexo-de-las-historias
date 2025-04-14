@@ -1,0 +1,32 @@
+Numero partida = 1
+PersonajeNombre = diego
+PersonajeRaza = Orco
+PersonajeClase = Paladin
+PersonajeDinero = 15
+PersonajeEstadisticas = 10-13-7-8-11-7
+PersonajeEquipamiento = Espadón--Yelmo barbuta-Cota de malla-Zapatos de cuero
+PersonajeHistoria = 1-1-1-0-0-0
+
+-----------------------------------------
+-----------------------------------------
+
+Numero partida = 2
+PersonajeNombre = nada
+PersonajeRaza = nada
+PersonajeClase = nada
+PersonajeDinero = 15
+PersonajeEstadisticas = 0-0-0-0-0-0
+PersonajeEquipamiento = 0-0-0-0-0
+PersonajeHistoria = 0-0-0-0-0-0
+
+-----------------------------------------
+-----------------------------------------
+
+Numero partida = 3
+PersonajeNombre = nada
+PersonajeRaza = nada
+PersonajeClase = nada
+PersonajeDinero = 15
+PersonajeEstadisticas = 0-0-0-0-0-0
+PersonajeEquipamiento = 0-0-0-0-0
+PersonajeHistoria = 0-0-0-0-0-0
