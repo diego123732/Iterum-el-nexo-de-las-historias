@@ -454,4 +454,32 @@ public class GuardadoPartida {
         }
         LectorBuffRead.continuarHistoria();
     }
+
+    public static void EliminarPartida (int numeroPartida, Partida partida) {
+        ManipulacionBD.UltimoGuardado(partida);
+        List<String> contenidoArchivo = leerArchivo();
+        if (numeroPartida == 1) {
+            for (int i = 0; i < 12; i++) {
+                contenidoArchivo.remove(i);
+            }
+        }
+        else {
+            
+            int ubicacionPartida = -1;
+            boolean partidaEncontrada = false;
+            int contador = 0;
+            do {
+                if (contenidoArchivo.get(contador).startsWith("Numero partida = " + numeroPartida)) {
+                    ubicacionPartida = contador;
+                    partidaEncontrada = true;
+                }
+                contador++;
+            } while (!partidaEncontrada);
+            for (int i = (ubicacionPartida + 11); i >= (ubicacionPartida - 4); i--) {
+                contenidoArchivo.remove(i);
+            }
+        }
+
+        escribirArchivo(contenidoArchivo);
+    }
 }

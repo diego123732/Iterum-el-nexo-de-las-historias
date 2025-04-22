@@ -1,7 +1,6 @@
 package historias;
 
 import java.io.IOException;
-import java.time.LocalTime;
 
 import utilidades.Aleatoriedad;
 import utilidades.GuardadoPartida;
@@ -165,6 +164,8 @@ public class Historia {
             GuardadoPartida.guardarPartida(numeroPartida, partida);
             TextoLento.printSlow("Partida guardada automaticamente...");
         }
+        System.out.println("Partida finalizada.");
+        GuardadoPartida.EliminarPartida(numeroPartida, partida);
     }
     
 

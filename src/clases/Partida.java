@@ -4,11 +4,6 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-import javax.swing.plaf.basic.BasicListUI.ListSelectionHandler;
-
-import historias.Historia;
-import utilidades.ManipulacionBD;
-
 public class Partida {
 
     private PersonajePrinc personajePrincipalPartida;
