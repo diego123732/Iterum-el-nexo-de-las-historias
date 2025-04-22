@@ -53,11 +53,12 @@ public class Historia {
         System.out.println(Mensaje_base);//Mensaje base, independiente, va cambiando en funcion de su metodo aleatorio, es un void, que devuelve un println
     }
     public static void historia(int numeroPartida) throws IOException, InterruptedException{
-        Partida partida = new Partida();
+        Partida partida = null;
         if (GuardadoPartida.PartidaEmpezada(numeroPartida)) {
-            partida.setPersonajePrincipalPartida(GuardadoPartida.devolverPersonaje(numeroPartida, partida));
+            partida = GuardadoPartida.cargarPartida(numeroPartida);
         }
         else {
+            partida = new Partida();
             TextoLento.printSlow("Que comience la historia");
             String nombreJugador = LectorBuffRead.leer("Como vas a queres llamar a tu personaje:");
             Razas razaPersonaje = null;

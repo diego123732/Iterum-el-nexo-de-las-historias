@@ -1,0 +1,26 @@
+Numero partida = 1
+PersonajeNombre = Ejemplo Partida Guardada
+PersonajeRaza = Orco
+PersonajeClase = Mago
+PersonajeDinero = 15
+PersonajeEstadisticas = 8-8-12-11-7-10
+PersonajeEquipamiento = Baculo--Sombrero de mago-Túnica-Zapatos de cuero
+PersonajeHistoria = 0-0-0-0-0-0
+
+-----------------------------------------
+-----------------------------------------
+
+Numero partida = 2
+PersonajeNombre = pepe
+PersonajeRaza = Elfo
+PersonajeClase = Paladin
+PersonajeDinero = 15
+PersonajeEstadisticas = 8-10-8-7-11-12
+PersonajeEquipamiento = Crucifijo-Escudo-Yelmo cónico-Cota de malla-Zapatos de cuero
+PersonajeHistoria = 0-0-0-0-0-0
+Fecha Inicio Partida = 2025-04-16 12:13:35
+Dinero Total = 15
+Daño Total = 0.0
+Fecha Inicio Partida = 2025-04-16 12:04:51
+Dinero Total = 15
+Daño Total = 0.0

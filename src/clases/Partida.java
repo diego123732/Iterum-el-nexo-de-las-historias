@@ -30,6 +30,15 @@ public class Partida {
         ManipulacionBD.PrimerGuardarDatos(this);
     }
 
+    public Partida (LocalDateTime fechaInicioPartida, int dineroTotalPartida, double dañoTotalPartida) {
+        this.personajePrincipalPartida = null;
+        this.FECHA_INICIO_PARTIDA = fechaInicioPartida;
+        this.fechaFinalPartida = FECHA_INICIO_PARTIDA;
+        this.dineroTotalPartida = dineroTotalPartida;
+        this.dañoTotalPartida = dañoTotalPartida;
+        this.duracionPartida = Duration.between(FECHA_INICIO_PARTIDA, fechaFinalPartida);
+    }
+
     public PersonajePrinc getPersonajePrincipalPartida() {
         return personajePrincipalPartida;
     }

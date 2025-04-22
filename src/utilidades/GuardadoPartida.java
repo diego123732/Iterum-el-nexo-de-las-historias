@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -69,6 +71,11 @@ public class GuardadoPartida {
                     escribir.newLine();
                     escribir.write("PersonajeHistoria = 0-0-0-0-0-0");
                     escribir.newLine();
+                    escribir.write("Fecha Inicio Partida = ");
+                    escribir.newLine();
+                    escribir.write("Dinero Total = 15");
+                    escribir.newLine();
+                    escribir.write("Daño Total = 0");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -88,7 +95,7 @@ public class GuardadoPartida {
 
     public static List<String> DatosActualizados(int numeroPartida, List<String> datosGuardar,
             List<String> auxiliarFormacion) {
-        if (numeroPartida < PartidasGuardadas().getFirst()) {
+        if (PartidasGuardadas().isEmpty()) {
             datosGuardar.add("Numero partida = " + numeroPartida);
             datosGuardar.add("PersonajeNombre = nada");
             datosGuardar.add("PersonajeRaza = nada");
@@ -97,6 +104,27 @@ public class GuardadoPartida {
             datosGuardar.add("PersonajeEstadisticas = 0-0-0-0-0-0");
             datosGuardar.add("PersonajeEquipamiento = 0-0-0-0-0");
             datosGuardar.add("PersonajeHistoria = 0-0-0-0-0-0");
+            datosGuardar.add("Fecha Inicio Partida = ");
+            datosGuardar.add("Dinero Total = 15");
+            datosGuardar.add("Daño Total = 0");
+            datosGuardar.addAll(auxiliarFormacion);
+            /**
+             * Añade los datos correspondientes a la primera partida y luego
+             * los que ya estaban dentro del archivo
+             */
+        }
+        else if (numeroPartida < PartidasGuardadas().getFirst()) {
+            datosGuardar.add("Numero partida = " + numeroPartida);
+            datosGuardar.add("PersonajeNombre = nada");
+            datosGuardar.add("PersonajeRaza = nada");
+            datosGuardar.add("PersonajeClase = nada");
+            datosGuardar.add("PersonajeDinero = 15");
+            datosGuardar.add("PersonajeEstadisticas = 0-0-0-0-0-0");
+            datosGuardar.add("PersonajeEquipamiento = 0-0-0-0-0");
+            datosGuardar.add("PersonajeHistoria = 0-0-0-0-0-0");
+            datosGuardar.add("Fecha Inicio Partida = ");
+            datosGuardar.add("Dinero Total = 15");
+            datosGuardar.add("Daño Total = 0");
             datosGuardar.addAll(auxiliarFormacion);
             /**
              * Añade los datos correspondientes a la primera partida y luego
@@ -127,6 +155,9 @@ public class GuardadoPartida {
                     datosGuardar.add("PersonajeEstadisticas = 0-0-0-0-0-0");
                     datosGuardar.add("PersonajeEquipamiento = 0-0-0-0-0");
                     datosGuardar.add("PersonajeHistoria = 0-0-0-0-0-0");
+                    datosGuardar.add("Fecha Inicio Partida = ");
+                    datosGuardar.add("Dinero Total = 15");
+                    datosGuardar.add("Daño Total = 0");
                     partidaAñadida = true;
                 }
                 else{
@@ -247,6 +278,12 @@ public class GuardadoPartida {
     public static void guardarPartida(int numeroPartida, Partida partida) {
         PersonajePrinc personajePrinc = partida.getPersonajePrincipalPartida();
         try {
+            String fechaFormateada = partida.getFECHA_INICIO_PARTIDA()
+            .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            CambiarDatosPartida("Fecha Inicio Partida",fechaFormateada, numeroPartida);
+            CambiarDatosPartida("Dinero Total", String.valueOf(partida.getDineroTotalPartida()) , numeroPartida);
+            CambiarDatosPartida("Daño Total", String.valueOf(partida.getDañoTotalPartida()), numeroPartida);
+
             CambiarDatosPartida("PersonajeNombre", personajePrinc.getNombre(), numeroPartida);
             CambiarDatosPartida("PersonajeRaza", personajePrinc.getRaza().toString(), numeroPartida);
             CambiarDatosPartida("PersonajeClase", personajePrinc.getOcupacion().toString(), numeroPartida);
@@ -289,32 +326,15 @@ public class GuardadoPartida {
         }
     }
 
-    public static PersonajePrinc devolverPersonaje(int numeroPartida, PersonajePrinc personajePrinc) {
+    public static Partida cargarPartida (int numeroPartida) {
+        int dineroTotalPartida = Integer.parseInt(DevolverDatoConcretoPartida("Dinero Total", numeroPartida));
+        double dañoTotalPartida = Double.parseDouble(DevolverDatoConcretoPartida("Daño Total", numeroPartida));
+        Partida partida = new Partida(LocalDateTime.parse(
+            DevolverDatoConcretoPartida("Fecha Inicio Partida", numeroPartida),
+             DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")),
+             dineroTotalPartida,
+             dañoTotalPartida);
 
-        // El dato guardado del dinero se le pone al jugador
-        personajePrinc.setDinero(Integer.parseInt(DevolverDatoConcretoPartida("PersonajeDinero", numeroPartida)));
-
-        // El dato guardado las estadisticas se le pone al jugador
-        String[] fragmentadoEst = (DevolverDatoConcretoPartida("PersonajeEstadisticas", numeroPartida)).split("-", 6);
-        for (int i = 0; i < personajePrinc.getEstadisticas().length; i++) {
-            personajePrinc.setEstadisticas(i, Integer.parseInt(fragmentadoEst[i]));
-        }
-
-        // El dato guardado del equipamiento se le pone al jugador
-        String[] fragmentadoEquip = (DevolverDatoConcretoPartida("PersonajeEquipamiento", numeroPartida)).split("-", 5);
-        for (int i = 0; i < personajePrinc.getEquipamiento().length; i++) {
-            personajePrinc.setEquipamiento(i, fragmentadoEquip[i]);
-        }
-
-        // El dato guardado del equipamiento se le pone al jugador
-        String[] fragmentadoHistoria = (DevolverDatoConcretoPartida("PersonajeHistoria", numeroPartida)).split("-", 6);
-        for (int i = 0; i < personajePrinc.getEquipamiento().length; i++) {
-            personajePrinc.setHistoria(Integer.parseInt(fragmentadoHistoria[i]), i);
-        }
-        return personajePrinc;
-    }
-
-    public static PersonajePrinc devolverPersonaje(int numeroPartida, Partida partida) {
         PersonajePrinc personajePrinc = null;
         Razas personajeRaza = null;
         switch (DevolverDatoConcretoPartida("PersonajeRaza", numeroPartida)) {
@@ -372,8 +392,30 @@ public class GuardadoPartida {
             default:
                 break;
         }
-        personajePrinc = devolverPersonaje(numeroPartida, personajePrinc);
-        return personajePrinc;
+
+        // El dato guardado del dinero se le pone al jugador
+        personajePrinc.setDinero(Integer.parseInt(DevolverDatoConcretoPartida("PersonajeDinero", numeroPartida)));
+
+        // El dato guardado las estadisticas se le pone al jugador
+        String[] fragmentadoEst = (DevolverDatoConcretoPartida("PersonajeEstadisticas", numeroPartida)).split("-", 6);
+        for (int i = 0; i < personajePrinc.getEstadisticas().length; i++) {
+            personajePrinc.setEstadisticas(i, Integer.parseInt(fragmentadoEst[i]));
+        }
+
+        // El dato guardado del equipamiento se le pone al jugador
+        String[] fragmentadoEquip = (DevolverDatoConcretoPartida("PersonajeEquipamiento", numeroPartida)).split("-", 5);
+        for (int i = 0; i < personajePrinc.getEquipamiento().length; i++) {
+            personajePrinc.setEquipamiento(i, fragmentadoEquip[i]);
+        }
+
+        // El dato guardado del equipamiento se le pone al jugador
+        String[] fragmentadoHistoria = (DevolverDatoConcretoPartida("PersonajeHistoria", numeroPartida)).split("-", 6);
+        for (int i = 0; i < personajePrinc.getEquipamiento().length; i++) {
+            personajePrinc.setHistoria(Integer.parseInt(fragmentadoHistoria[i]), i);
+        }
+    
+        partida.setPersonajePrincipalPartida(personajePrinc);
+        return partida;
     }
 
     public static boolean PartidaEmpezada(int numeroPartida) {

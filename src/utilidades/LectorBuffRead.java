@@ -184,9 +184,14 @@ public class LectorBuffRead{
 
         System.out.println("Estas son las partidas guardadas disponibles:");
         System.out.print("Partidas guardadas: ");
+        String partidas = "";
         for (Integer partida : partidasGuardadas) {
-            System.out.print(partida + ",");
-        }System.out.println();
+            partidas += partida + ",";
+        }
+        if (partidas.endsWith(",")) {
+            partidas = partidas.substring(0, partidas.length()-1);
+        }
+        System.out.println(partidas);
 
         int seleccion = -1;
         boolean eleccionValida = false;

@@ -369,7 +369,7 @@ public abstract class Elfos {
 
             elecionIntrahistoria = LectorBuffRead.leer((LOS_PROTECTORES_DEL_BOSQUE_1_3 + "\n"
                     + LOS_PROTECTORES_DEL_BOSQUE_1_4 + "\n" + LOS_PROTECTORES_DEL_BOSQUE_1_5),
-                    "humanos", "elfos");
+                    "humanos", "elfos","nada");
 
             switch (elecionIntrahistoria) {
                 case "humanos":
