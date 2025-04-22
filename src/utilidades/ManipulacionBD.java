@@ -24,7 +24,8 @@ public class ManipulacionBD {
         "HistoriaPersonaje varchar(20)," + 
         "FECHA_INICIO_PARTIDA datetime not null," +
         "FechaFinalPartida datetime," +
-        "MinutosPartida int);";
+        "DuracionPartida varchar(10)" + 
+        ");";
         try {
             Connection baseDatos = ConexionBD.Conexion();
 
@@ -99,6 +100,9 @@ public class ManipulacionBD {
             historiasFormateadas.substring(0, historiasFormateadas.length() - 1);
         }//Si terminan con un guion lo quita, para que quede mejor en mysql
 
+        String duracionPartidaFormateada = String.format("%02d:%02d:%02d", 
+        partida.getDuracionPartida().toHours(), (partida.getDuracionPartida().toMinutes()%60), (partida.getDuracionPartida().getSeconds()%60));
+
         String usoBaseDatos = "use iterum;";
 
         // --- Sentencias SQL --- //
@@ -127,6 +131,9 @@ public class ManipulacionBD {
         String sentenciaGuardado7 = "UPDATE partidas SET HistoriaPersonaje = '" + historiasFormateadas +
             "' WHERE FECHA_INICIO_PARTIDA = " + fechaInicioFormateada + ";";
 
+        String sentenciaGuardado8 = "UPDATE partidas SET DuracionPartida = '" + duracionPartidaFormateada +
+            "' WHERE FECHA_INICIO_PARTIDA = " + fechaInicioFormateada + ";";
+
         try {
             Connection baseDatos = ConexionBD.Conexion();
             Statement sentencia = baseDatos.createStatement();
@@ -140,6 +147,7 @@ public class ManipulacionBD {
             sentencia.execute(sentenciaGuardado5);
             sentencia.execute(sentenciaGuardado6);
             sentencia.execute(sentenciaGuardado7);
+            sentencia.execute(sentenciaGuardado8);
 
             sentencia.close();
             baseDatos.close();

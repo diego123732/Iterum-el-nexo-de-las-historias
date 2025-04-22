@@ -1,10 +1,12 @@
 package historias;
 
 import java.io.IOException;
+import java.time.LocalTime;
 
 import utilidades.Aleatoriedad;
 import utilidades.GuardadoPartida;
 import utilidades.LectorBuffRead;
+import utilidades.ManipulacionBD;
 import utilidades.TextoLento;
 import clases.Asesino;
 import clases.Curandero;
@@ -18,6 +20,7 @@ import clases.Tanque;
 
 
 public class Historia {
+    
     public static void MensajeBase () {
         String Mensaje_base = "Bienvenido";
         //Serie de mensajes que pueden aparecer
@@ -59,6 +62,8 @@ public class Historia {
         }
         else {
             partida = new Partida();
+            ManipulacionBD.PrimerGuardarDatos(partida);
+            
             TextoLento.printSlow("Que comience la historia");
             String nombreJugador = LectorBuffRead.leer("Como vas a queres llamar a tu personaje:");
             Razas razaPersonaje = null;
@@ -161,5 +166,6 @@ public class Historia {
             TextoLento.printSlow("Partida guardada automaticamente...");
         }
     }
+    
 
 }

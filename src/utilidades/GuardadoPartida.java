@@ -6,7 +6,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -73,6 +75,8 @@ public class GuardadoPartida {
                     escribir.newLine();
                     escribir.write("Fecha Inicio Partida = ");
                     escribir.newLine();
+                    escribir.write("Duracion Partida = 00:00:00");
+                    escribir.newLine();
                     escribir.write("Dinero Total = 15");
                     escribir.newLine();
                     escribir.write("Daño Total = 0");
@@ -105,6 +109,7 @@ public class GuardadoPartida {
             datosGuardar.add("PersonajeEquipamiento = 0-0-0-0-0");
             datosGuardar.add("PersonajeHistoria = 0-0-0-0-0-0");
             datosGuardar.add("Fecha Inicio Partida = ");
+            datosGuardar.add("Duracion Partida = 00:00:00");
             datosGuardar.add("Dinero Total = 15");
             datosGuardar.add("Daño Total = 0");
             datosGuardar.addAll(auxiliarFormacion);
@@ -123,6 +128,7 @@ public class GuardadoPartida {
             datosGuardar.add("PersonajeEquipamiento = 0-0-0-0-0");
             datosGuardar.add("PersonajeHistoria = 0-0-0-0-0-0");
             datosGuardar.add("Fecha Inicio Partida = ");
+            datosGuardar.add("Duracion Partida = 00:00:00");
             datosGuardar.add("Dinero Total = 15");
             datosGuardar.add("Daño Total = 0");
             datosGuardar.addAll(auxiliarFormacion);
@@ -140,7 +146,7 @@ public class GuardadoPartida {
                         + numeroPartidaAnterior)) {
                     numeroPartidaAnteriorEncontrado = true;
                 }
-                if (auxiliarFormacion.get(contador).startsWith("PersonajeHistoria")
+                if (auxiliarFormacion.get(contador).startsWith("Daño Total")
                         && numeroPartidaAnteriorEncontrado == true && !partidaAñadida) {
                     datosGuardar.add(auxiliarFormacion.get(contador));
                     datosGuardar.add("");
@@ -156,6 +162,7 @@ public class GuardadoPartida {
                     datosGuardar.add("PersonajeEquipamiento = 0-0-0-0-0");
                     datosGuardar.add("PersonajeHistoria = 0-0-0-0-0-0");
                     datosGuardar.add("Fecha Inicio Partida = ");
+                    datosGuardar.add("Duracion Partida = 00:00:00");
                     datosGuardar.add("Dinero Total = 15");
                     datosGuardar.add("Daño Total = 0");
                     partidaAñadida = true;
@@ -281,6 +288,12 @@ public class GuardadoPartida {
             String fechaFormateada = partida.getFECHA_INICIO_PARTIDA()
             .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
             CambiarDatosPartida("Fecha Inicio Partida",fechaFormateada, numeroPartida);
+
+            String duracionPartidaFormateada = String.format("%02d:%02d:%02d", 
+            partida.getDuracionPartida().toHours(), (partida.getDuracionPartida().toMinutes()%60), (partida.getDuracionPartida().getSeconds()%60));
+            CambiarDatosPartida("Duracion Partida", duracionPartidaFormateada, numeroPartida);
+            partida.setHoraInicioPartida(LocalTime.now());
+
             CambiarDatosPartida("Dinero Total", String.valueOf(partida.getDineroTotalPartida()) , numeroPartida);
             CambiarDatosPartida("Daño Total", String.valueOf(partida.getDañoTotalPartida()), numeroPartida);
 
@@ -333,7 +346,8 @@ public class GuardadoPartida {
             DevolverDatoConcretoPartida("Fecha Inicio Partida", numeroPartida),
              DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")),
              dineroTotalPartida,
-             dañoTotalPartida);
+             dañoTotalPartida,
+             Duration.between(LocalTime.MIDNIGHT, LocalTime.parse(DevolverDatoConcretoPartida("Duracion Partida", numeroPartida))));
 
         PersonajePrinc personajePrinc = null;
         Razas personajeRaza = null;

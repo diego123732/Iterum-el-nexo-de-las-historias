@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConexionBD {
     public static Connection Conexion () throws SQLException{
-        String url = "jdbc:mysql://localhost:3306/tienda";
+        String url = "jdbc:mysql://localhost:3306/";
         String usuario = "root";
         String contraseña = "Password1234";
 
