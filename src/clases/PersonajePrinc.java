@@ -70,8 +70,10 @@ abstract public class PersonajePrinc{
 
     public void setDinero(int dinero) {
         this.dinero = dinero;
-        if (dinero > this.partidaPersonaje.getDineroTotalPartida()) {
-            this.partidaPersonaje.setDineroTotalPartida(this.dinero);
+        if (this.partidaPersonaje != null) {
+            if (dinero > this.partidaPersonaje.getDineroTotalPartida()) {
+                this.partidaPersonaje.setDineroTotalPartida(this.dinero);
+            }
         }
     }
 
@@ -209,7 +211,7 @@ abstract public class PersonajePrinc{
     }
 
     /**
-     * metodo que devuelve el el daño segun las armas que tenga equipadas el jugador
+     * metodo que devuelve el el daño segun las armas que tenga equipadas el jugador y si el jugador quiere tirar el dado
      * 
      * @return dos datos double, el daño total y lo que ha sacado en el dado de veinte
      * @throws IOException
@@ -285,6 +287,82 @@ abstract public class PersonajePrinc{
 
         }
         return new double[] {daño_total, dadoVeinte};
+    }
+
+    /**
+     * metodo que devuelve el el daño segun las armas que tenga equipadas el jugador
+     * 
+     * @return dos datos double, el daño total
+     * @throws IOException
+     * @see PersonajePrinc
+     * @see PlayerData
+     */
+    public double DañoSegunArmas() {
+        double daño_total = 0;
+        boolean dadoVeinteTirado = false;
+        double dadoVeinte = 1;
+        
+        if (this.equipamiento[1].isEmpty()) {// en el combate se divide por armas de una o dos manos
+            switch (this.equipamiento[0]) /* Calculo de daño en armas de dos manos */ {
+
+                case "Baculo":// daño Baculo
+                    daño_total += (dadoVeinteTirado)
+                            ? (PlayerData.BACULO_DAMAGE.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()])) * (dadoVeinte / 10)
+                            : PlayerData.BACULO_DAMAGE.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()]);
+                    break;
+                    
+                case "Espadón":// daño Espadón
+                    daño_total += (dadoVeinteTirado)
+                            ? (PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()])) * (dadoVeinte / 10)
+                            : PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()]);
+                    break;
+                default:// No tiene nada equipado en las manos
+                    break;
+            }
+        } else {
+            switch (this.equipamiento[0]) /* Calculo de daño de la primera arma de dos armas de una mano */ {
+
+                case "Daga basica":// daño daga
+                    daño_total += (dadoVeinteTirado)
+                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
+                    break;
+
+                case "Crucifijo":// daño crucifijo
+                    daño_total += (dadoVeinteTirado)
+                            ? (PlayerData.CRUCIFIJO_DAMAGE.getValue() + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.CRUCIFIJO_DAMAGE.getValue() + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2);
+                    break;
+
+                case "Mazo":// daño mazo
+                    daño_total += (dadoVeinteTirado)
+                            ? (PlayerData.MAZO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.MAZO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
+                    break;
+
+                default:// No tiene nada equipado en los pies
+                    break;
+            }
+            switch (this.equipamiento[1]) /* Calculo de daño de la segunda arma en dos armas de una mano */ {
+
+                case "Escudo":// daño escudo
+                    daño_total += (dadoVeinteTirado)
+                            ? (PlayerData.ESCUDO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.ESCUDO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
+                    break;
+
+                case "Daga basica":// daño daga
+                    daño_total += (dadoVeinteTirado)
+                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
+                    break;
+
+                default:
+                    break;
+            }
+
+        }
+        return daño_total;
     }
 
     /**

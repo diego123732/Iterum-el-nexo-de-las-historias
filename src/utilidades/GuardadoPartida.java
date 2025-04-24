@@ -446,13 +446,14 @@ public class GuardadoPartida {
     }
 
     public static void devolverContenidoArchivo () throws InterruptedException, IOException{
-        List<String> contenidoArchivo = leerArchivo();
-        Iterator<String> contenido = contenidoArchivo.iterator();
-        TextoLento.printSlow("Partidas guardadas: ");
-        while (contenido.hasNext()) {
-            TextoLento.printSlow(contenido.next());
+        if (new File(PATH_GUARDADO_DATOS).exists()) {
+            List<String> contenidoArchivo = leerArchivo();
+        if (contenidoArchivo.isEmpty()) {
+            System.out.println("No hay partidas guardadas");
         }
-        LectorBuffRead.continuarHistoria();
+        }else {
+            System.out.println("No hay partidas guardadas");
+        }
     }
 
     public static void EliminarPartida (int numeroPartida, Partida partida) {

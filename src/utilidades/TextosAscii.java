@@ -17,6 +17,19 @@ public class TextosAscii {
     public static String getAZUL () {return "\u001B[34m";}
     public static String getAMARILLO () {return "\u001B[33m";}
 
+    public static String getTextoBienvenida () {
+        String texto = "\r\n" + //
+                        "██████  ██ ███████ ███    ██ ██    ██ ███████ ███    ██ ██ ██████   ██████  \r\n" + //
+                        "██   ██ ██ ██      ████   ██ ██    ██ ██      ████   ██ ██ ██   ██ ██    ██ \r\n" + //
+                        "██████  ██ █████   ██ ██  ██ ██    ██ █████   ██ ██  ██ ██ ██   ██ ██    ██ \r\n" + //
+                        "██   ██ ██ ██      ██  ██ ██  ██  ██  ██      ██  ██ ██ ██ ██   ██ ██    ██ \r\n" + //
+                        "██████  ██ ███████ ██   ████   ████   ███████ ██   ████ ██ ██████   ██████  \r\n" + //
+                        "                                                                            \r\n" + //
+                        "                                                                            \r\n" + //
+                        "";
+        return texto;
+    }
+
     // Resetear color
     public static void resetColor() { System.out.print("\u001B[0m"); }
 

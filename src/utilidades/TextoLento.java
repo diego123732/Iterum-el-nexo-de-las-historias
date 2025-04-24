@@ -4,7 +4,7 @@ package utilidades;
 public class TextoLento {
     public static void printSlow(String text) throws InterruptedException {
         char[] placeholderChars = {'*', '#', '~', '%', '@'};
-        int milisegundosRetraso = 22;
+        int milisegundosRetraso = 11;
         
         for (int i = 0; i < text.length(); i++) {
             char currentChar = text.charAt(i);

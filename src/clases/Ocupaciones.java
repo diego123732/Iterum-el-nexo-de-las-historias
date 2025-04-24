@@ -11,7 +11,7 @@ public enum Ocupaciones {
     new String[]{"Baculo", "", "Sombrero de mago", "Túnica", "Zapatos de cuero"}),
 
     Asesino(new int[]{12, 7, 8, 10, 7, 11}, 
-    new String[]{"Daga basica", "Daga Basica", "Capucha", "Chaleco de cuero", "Zapatos de cuero"}),
+    new String[]{"Daga basica", "Daga basica", "Capucha", "Chaleco de cuero", "Zapatos de cuero"}),
 
     Curandero(new int[]{10, 7, 8, 12, 7, 11}, 
     new String[]{"Baculo", "", "Boina", "Cota de malla", "Zapatos de cuero"}),

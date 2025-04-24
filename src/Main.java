@@ -14,7 +14,14 @@ public class Main {
         boolean salirMenu = false;
         int numeroPartida = 0;
         TextosAscii.resetColor();
-        System.out.println("Bienvenido a Iterum, el nexo de las historias.");
+        System.out.println(TextosAscii.getTextoBienvenida());
+        TextoLento.printSlow("Bienvenido a Iterum, el nexo de las historias.");
+        TextoLento.printSlow("Un mundo donde cada decisión que tomes abrirá caminos únicos llenos de desafíos y descubrimientos.");
+        TextoLento.printSlow("Iterum es un RPG basado en texto, donde la narrativa cobra vida y tú eres el protagonista de tu propia aventura.");
+        TextoLento.printSlow("Explorarás un universo marcado por cuatro razas ancestrales: Orcos, Elfos, Enanos y Humanos.");
+        TextoLento.printSlow("Cada una con su propia historia, cultura y forma de ver el mundo.");
+        TextoLento.printSlow("Prepárate para tomar decisiones difíciles, enfrentarte a lo desconocido y dejar tu huella en este mundo cambiante.");
+                System.out.println();
         do {
 
             TextoLento.printSlow("Elija una opcion del menu:");
@@ -35,7 +42,7 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("Saliendo...");
+                    TextoLento.printSlow("Saliendo...");
                     salirMenu = true;
                     break;
 
