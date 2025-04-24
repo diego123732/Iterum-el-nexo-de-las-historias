@@ -13,8 +13,17 @@ import historias.Orcos.LaRebelionGoblin;
 import historias.Orcos.Mordor;
 import utilidades.TextosAscii;
 
+/**
+ * Clase en la que se juntan las historias de la cuarta parte de la historia
+ */
 public class Parte4 {
 
+    /**
+     * Metodo que junta todas las historias de la cuarta parte de cada raza
+     * @param personajePrincipal
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void Historia(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
         String eleccionIntraHistoria = "";
         System.out.println("\nParte 4.\n");

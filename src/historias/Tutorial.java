@@ -17,6 +17,10 @@ import clases.Razas;
 import clases.Tanque;
 
 public class Tutorial {
+    /**
+     * Metodo que devuelve por pantalla una tabla formateada con las estadisticas de cada uno de los personajes
+     * @see PersonajePrinc
+     */
     private static void TablaEstadisticasPersonajes () {
 
         PersonajePrinc mago = new Mago("Tutorial", Razas.Humano, null);
@@ -81,6 +85,11 @@ public class Tutorial {
          + "═".repeat(17) + "╩" + "═".repeat(11) + "╝");
     }
 
+    /**
+     * Metodo que devuelve por pantalla una serie de datos coloreados del equipamiento de cada uno
+     *  de los personajes al empezar la aventura y el daño base que hacen 
+     * @see PersonajePrinc
+     */
     private static void EquipamientoDañoBase () {
         PersonajePrinc mago = new Mago("Tutorial", Razas.Humano, null);
         PersonajePrinc guerrero = new Guerrero("Tutorial", Razas.Humano, null);
@@ -143,6 +152,13 @@ public class Tutorial {
         + ", Daño: "+ TextosAscii.getROJO() + Double.toString(paladin.DañoSegunArmas()) );
         System.out.println(TextosAscii.getRESET());
     }
+
+    /**
+     * Metodo principal de {@link Tutorial} con el desarrollo principal del tutorial
+     * @see PersonajePrinc
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void tutorial() throws IOException, InterruptedException {
         TextoLento.printSlow("Bienvenido al tutorial");
         TextoLento.printSlow("En este tutorial vas a aprender las principales mecanicas que tiene este videojuego para que te puedas ir acostumbrando a la partida.");

@@ -24,8 +24,7 @@ public class Paladin extends PersonajePrinc {
      * <p>
      * Adicionalmente utiliza un metodo de habilidad especial,
      * en este caso al ser la clase Paladin reduce el daño que va a recibir y se
-     * cura la vida
-     * en funcion de su Sabiduria, estadistica numero 6 de 6.
+     * cura la vida en funcion de su Sabiduria, estadistica numero 6 de 6.
      * 
      * @param vida_enemigo,damageEnemigo
      * @return devuelve un tipo boolean, si el jugador ha ganado o perdido el

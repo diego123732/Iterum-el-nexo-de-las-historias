@@ -22,8 +22,7 @@ public class Mago extends PersonajePrinc {
      * <p>
      * Adicionalmente utiliza un metodo de habilidad especial,
      * en este caso al ser la clase Mago se cura, reduce el daño y aumenta su daño
-     * en
-     * funcion de su Inteligencia dividido entre tres, estadistica numero 3 de 6.
+     * en funcion de su Inteligencia dividido entre tres, estadistica numero 3 de 6.
      * 
      * @param vida_enemigo,damageEnemigo
      * @return devuelve un tipo boolean, si el jugador ha ganado o perdido el

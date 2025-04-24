@@ -12,8 +12,16 @@ import historias.Humanos.LaMujerDeMorado;
 import historias.Orcos.LaRebelionGoblin;
 import historias.Orcos.Mordor;
 import utilidades.TextosAscii;
-
+/**
+ * Clase en la que se juntan las historias de la segunda parte de la historia
+ */
 public class Parte2 {
+    /**
+     * Metodo que junta todas las historias de la segunda parte de cada raza
+     * @param personajePrincipal
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void Historia(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
         String eleccionIntraHistoria = "";
         System.out.println("\nParte 2.\n");

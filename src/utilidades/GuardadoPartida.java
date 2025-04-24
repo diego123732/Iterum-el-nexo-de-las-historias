@@ -27,6 +27,16 @@ import clases.Tanque;
 public class GuardadoPartida {
     private static final String PATH_GUARDADO_DATOS = "src\\datosguardar\\DatosIterum.txt";
 
+    /**
+     * Metodo que gestiona cual es el numero de partida que el jugador va a elegir dependiendo de si 
+     * quiere empezar una nueva partida o una ya empezada
+     * @return devuelve el numero de la partida que sera utilizado en la partida para guardarla
+     * @see NuevaPartida
+     * @see PartidasGuardadas
+     * @see LectorBuffRead.elegirPartida
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static int elegirPartida() throws IOException, InterruptedException {
         int numeroPartida = 0;
         if (!new File(PATH_GUARDADO_DATOS).exists()) {
@@ -48,6 +58,15 @@ public class GuardadoPartida {
         return numeroPartida;
     }
 
+    /**
+     * Metodo que gestiona y crea una nueva partida cuando el jugador elije 
+     * empezar una nueva partida o no tiene partidas empezadas
+     * @see DatosActualizados
+     * @see escribirArchivo
+     * @param numeroPartida
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void NuevaPartida(int numeroPartida) throws IOException, InterruptedException {
 
         try {
@@ -97,6 +116,18 @@ public class GuardadoPartida {
         }
     }
 
+    /**
+     * Metodo que devuelve como tiene que estar formado el txt segun el numero de la partida 
+     * que se vaya a jugar y si ya hay partidas en el archivo
+     * <p>
+     * Basicamente si el archivo esta vacio añade la primera partida y sino decide donde colocar 
+     * la nueva partida dependiendo de las que ya hay dentro, para que el texto salga ordenado 
+     * por el numero de partida
+     * @param numeroPartida
+     * @param datosGuardar
+     * @param auxiliarFormacion
+     * @return Un array con todo el texto ordenado que luego se mete en el archivo .txt
+     */
     public static List<String> DatosActualizados(int numeroPartida, List<String> datosGuardar,
             List<String> auxiliarFormacion) {
         if (PartidasGuardadas().isEmpty()) {
@@ -177,6 +208,10 @@ public class GuardadoPartida {
         return datosGuardar;
     }
 
+    /**
+     * Metodo que busca en todo el archivo txt y cuenta cuales son las partidas guardadas
+     * @return un array con los numeros de las partidas guardadas
+     */
     public static List<Integer> PartidasGuardadas() {
         List<Integer> numeroPartidasGuardadas = new ArrayList<>();
         List<String> datosGuardados = new ArrayList<>();
@@ -191,6 +226,15 @@ public class GuardadoPartida {
         return numeroPartidasGuardadas;
     }
 
+    /**
+     * Metodo que busca que numero de partida esta libre, esta hecho para que empiece por el numero 1 aposta, 
+     * lo que hace que nunca pueda haber una partida numero 0
+     * <p>
+     * Un ejemplo de lo que hace el metodo y para que esta hecho: Si estan las partidas 1,3 y 4 
+     * en el archivo el metodo pasaria por el uno y luego al dos y al encontrar que el 2 no esta en 
+     * el archivo lo devolveria, para asi rellenar ese hueco con el metodo {@link NuevaPartida} en el hueco 2
+     * @return el numero de la partidalibre
+     */
     public static int PartidaLibre() {
         List<Integer> numeroPartidasGuardadas = PartidasGuardadas();
         int contador = 1;
@@ -203,6 +247,11 @@ public class GuardadoPartida {
         return contador;  // Devolvemos el número libre encontrado
     }
 
+    /**
+     * Metodo que devuelve cual es la partida menor a la que se quiere añadir 
+     * @param numeroPartida
+     * @return El numero de la partida anterior por orden de numero de la partida
+     */
     public static int NumeroPartidaAnterior(int numeroPartida) {
         int numeroPartidaAnterior = -1;
         for (Integer numerosPartida : PartidasGuardadas()) {
@@ -213,6 +262,10 @@ public class GuardadoPartida {
         return numeroPartidaAnterior;
     }
 
+    /**
+     * Metodo que lee el archivo txt y devuelve un array de String con su contenido
+     * @return un array de String con el contenido del txt
+     */
     public static List<String> leerArchivo() {
         List<String> lineasArchivo = new ArrayList<>();
 
@@ -228,6 +281,14 @@ public class GuardadoPartida {
         return lineasArchivo;
     }
 
+    /**
+     * Metodo que recibe un ArrayList y lo devuelve con el dato que busca 
+     * por la clave cambiado por el que recibe por parametros 
+     * @param datos
+     * @param Clave
+     * @param datoNuevo
+     * @param numeroPartida
+     */
     public static void reescribirDatos(List<String> datos, String Clave, String datoNuevo, int numeroPartida) {
         boolean partidaEncontrada = false;
         for (int i = 0; i < datos.size(); i++) {
@@ -241,6 +302,10 @@ public class GuardadoPartida {
         }
     }
 
+    /**
+     * Metodo que recibe un ArrayList de String y lo vuelca entero en un archivo txt
+     * @param datos
+     */
     public static void escribirArchivo(List<String> datos) {
         try (BufferedWriter buffer = new BufferedWriter(new FileWriter(PATH_GUARDADO_DATOS))) {
             for (String linea : datos) {
@@ -254,6 +319,13 @@ public class GuardadoPartida {
         }
     }
 
+    /**
+     * Metodo que Mezcla la reescritura de datos {@link reescribirDatos} 
+     * con la escritura en el txt {@link escribirArchivo} para meter los datos nuevos al archivo
+     * @param DatoCambiar
+     * @param NuevoDato
+     * @param numeroPartida
+     */
     public static void CambiarDatosPartida(String DatoCambiar, String NuevoDato, int numeroPartida) {
 
         List<String> datos = leerArchivo();// mete todo el archivo en datos
@@ -262,6 +334,12 @@ public class GuardadoPartida {
 
     }
 
+    /**
+     * Metodo que devuelve un dato concreto buscandolo con una clave de una partida por el dato clave {@link numeroPartida}
+     * @param clave
+     * @param numeroPartida
+     * @return El dato buscado en formato String
+     */
     public static String DevolverDatoConcretoPartida(String clave, int numeroPartida) {
         List<String> datos = leerArchivo();
         boolean partidaEncontrada = false;
@@ -282,6 +360,11 @@ public class GuardadoPartida {
         return datoDevuelto;
     }
 
+    /**
+     * Metodo que guarda la partida del personaje cada vez que se termina una parte de la historia
+     * @param numeroPartida
+     * @param partida
+     */
     public static void guardarPartida(int numeroPartida, Partida partida) {
         PersonajePrinc personajePrinc = partida.getPersonajePrincipalPartida();
         try {
@@ -339,6 +422,11 @@ public class GuardadoPartida {
         }
     }
 
+    /**
+     * Metodo que devuelve la partida jugada para seguir jugandola
+     * @param numeroPartida
+     * @return El objeto {@link Partida} recuperado
+     */
     public static Partida cargarPartida (int numeroPartida) {
         int dineroTotalPartida = Integer.parseInt(DevolverDatoConcretoPartida("Dinero Total", numeroPartida));
         double dañoTotalPartida = Double.parseDouble(DevolverDatoConcretoPartida("Daño Total", numeroPartida));
@@ -432,6 +520,11 @@ public class GuardadoPartida {
         return partida;
     }
 
+    /**
+     * Metodo que valora si la partida ya ha empezado o no
+     * @param numeroPartida
+     * @return si la partida ha empezado boolean
+     */
     public static boolean PartidaEmpezada(int numeroPartida) {
         boolean partidaEmpezada = false;
         try {
@@ -445,9 +538,17 @@ public class GuardadoPartida {
         return partidaEmpezada;
     }
 
+    /**
+     * Metodo numero tres del menu principal que devuelve las partidas guardadas (si hay) ya mostradas por pantalla
+     * @throws InterruptedException
+     * @throws IOException
+     */
     public static void devolverContenidoArchivo () throws InterruptedException, IOException{
         if (new File(PATH_GUARDADO_DATOS).exists()) {
             List<String> contenidoArchivo = leerArchivo();
+            for (String string : contenidoArchivo) {
+                System.out.println(string);
+            }
         if (contenidoArchivo.isEmpty()) {
             System.out.println("No hay partidas guardadas");
         }
@@ -456,6 +557,12 @@ public class GuardadoPartida {
         }
     }
 
+    /**
+     * Metodo que al terminar la partida elimina la partida del archivo txt de guardado 
+     * y se guarda finalmente en la base de datos
+     * @param numeroPartida
+     * @param partida
+     */
     public static void EliminarPartida (int numeroPartida, Partida partida) {
         ManipulacionBD.UltimoGuardado(partida);
         List<String> contenidoArchivo = leerArchivo();

@@ -5,6 +5,9 @@ import java.io.IOException;
 import utilidades.Aleatoriedad;
 import utilidades.LectorBuffRead;
 
+/**
+ * Clase padre de todos los personajes principales y la que tiene una de las mayores cargas de todo el videojuego
+ */
 abstract public class PersonajePrinc{
     private final String nombre;// Recoge el nombre del personaje del jugador.
     private final Razas raza;// Recoge la raza activa del personaje del jugador, la raza que tiene en el

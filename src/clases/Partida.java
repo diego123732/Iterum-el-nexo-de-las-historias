@@ -4,6 +4,9 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
+/**
+ * Clase que representa una partida nueva cada vez que se instancia
+ */
 public class Partida {
 
     private PersonajePrinc personajePrincipalPartida;

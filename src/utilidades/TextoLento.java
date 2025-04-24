@@ -2,12 +2,18 @@ package utilidades;
 
 
 public class TextoLento {
-    public static void printSlow(String text) throws InterruptedException {
+    /**
+     * Metodo que muestra el texto que se le mete por parametro de 
+     * forma que parezca que se muestra de poco en poco
+     * @param text
+     * @throws InterruptedException
+     */
+    public static void printSlow(String texto) throws InterruptedException {
         char[] placeholderChars = {'*', '#', '~', '%', '@'};
         int milisegundosRetraso = 11;
         
-        for (int i = 0; i < text.length(); i++) {
-            char currentChar = text.charAt(i);
+        for (int i = 0; i < texto.length(); i++) {
+            char currentChar = texto.charAt(i);
             
             // Si es un salto de línea o espacio, imprímelo directamente sin efecto
             if (currentChar == '\n' || currentChar == ' ') {

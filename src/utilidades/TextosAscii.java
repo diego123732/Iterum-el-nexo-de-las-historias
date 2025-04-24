@@ -1,22 +1,69 @@
 package utilidades;
 
 public class TextosAscii {
-    // Métodos que solo establecen el color (sin println)
+    /**
+     * Metodo que cambia el color de la pantalla al negro
+     */
     public static void setNegro() { System.out.print("\u001B[30m");}
+    /**
+     * Metodo que cambia el color de la pantalla al rojo
+     */
     public static void setRojo() { System.out.print("\u001B[31m"); }
+    /**
+     * Metodo que cambia el color de la pantalla al verde
+     */
     public static void setVerde() { System.out.print("\u001B[32m"); }
+    /**
+     * Metodo que cambia el color de la pantalla al amarillo
+     */
     public static void setAmarillo() { System.out.print("\u001B[33m"); }
+    /**
+     * Metodo que cambia el color de la pantalla al azul
+     */
     public static void setAzul() { System.out.print("\u001B[34m"); }
+    /**
+     * Metodo que cambia el color de la pantalla al morado/magenta
+     */
     public static void setMagenta() { System.out.print("\u001B[35m"); }
+    /**
+     * Metodo que cambia el color de la pantalla al azul cyan
+     */
     public static void setCyan() { System.out.print("\u001B[36m"); }
+    /**
+     * Metodo que cambia el color de la pantalla al blanco
+     */
     public static void setBlanco() { System.out.print("\u001B[37m"); }
 
+    /**
+     * Metodo que devuelve el texto String del color predefinido
+     * @return String color predefinido
+     */
     public static String getRESET () { return "\u001B[0m";}
+    /**
+     * Metodo que devuelve el texto String del color rojo
+     * @return String color rojo
+     */
     public static String getROJO () {return "\u001B[31m";}
+    /**
+     * Metodo que devuelve el texto String del color verde
+     * @return String color verde
+     */
     public static String getVERDE () {return "\u001B[32m";}
+    /**
+     * Metodo que devuelve el texto String del color azul
+     * @return String color azul
+     */
     public static String getAZUL () {return "\u001B[34m";}
+    /**
+     * Metodo que devuelve el texto String del color amarillo
+     * @return String color amarillo
+     */
     public static String getAMARILLO () {return "\u001B[33m";}
 
+    /**
+     * Metodo que devuelve el texto ascii de bienvenida
+     * @return
+     */
     public static String getTextoBienvenida () {
         String texto = "\r\n" + //
                         "██████  ██ ███████ ███    ██ ██    ██ ███████ ███    ██ ██ ██████   ██████  \r\n" + //
@@ -30,9 +77,15 @@ public class TextosAscii {
         return texto;
     }
 
-    // Resetear color
+    /**
+     * Metodo que cambia el color de la pantalla al predefinido
+     */
     public static void resetColor() { System.out.print("\u001B[0m"); }
 
+    /**
+     * Metodo que formatea un muñeco que simula el personaje del enemigo al jugador
+     * @return El muñeco formateado
+     */
     public static String[] getEnemigo () {
         String[] enemigo = {
             "  /\\", 
@@ -43,6 +96,10 @@ public class TextosAscii {
         return enemigo;
     };
 
+    /**
+     * Metodo que formatea un muñeco que simula el personaje del jugador
+     * @return El muñeco formateado
+     */
     public static String[] getJugador () {
         String[] jugador = {
         "  /\\", 
@@ -53,7 +110,13 @@ public class TextosAscii {
         return jugador;
     };
     
-    // Genera barra de vida
+    /**
+     * Metodo que simula una barra de vida segun la vida maxima que pueda tener el jugador 
+     * @param vida
+     * @param vidaMax
+     * @param color
+     * @return
+     */
     public static String barraVida(int vida,int vidaMax, String color) {
         int porcentajeVida = (vida*100)/vidaMax;
         int longitud = 20;
@@ -70,6 +133,17 @@ public class TextosAscii {
         return barraVida;
     }
 
+    /**
+     * Metodo que pinta por pantalla una tabla formateada con todo lo que pasa en la partida
+     * @see barraVida
+     * @param vidaEnemigo
+     * @param vidaEnemigoMax
+     * @param vidaJugador
+     * @param vidaJugadorMax
+     * @param dañoAJugador
+     * @param dañoAEnemigo
+     * @param dadoVeinte
+     */
     public static void pintarCombate (double vidaEnemigo, double vidaEnemigoMax, double vidaJugador, double vidaJugadorMax,double dañoAJugador, double dañoAEnemigo, double dadoVeinte ) {
         
         String[] jugador = TextosAscii.getJugador();

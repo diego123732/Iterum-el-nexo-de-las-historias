@@ -22,8 +22,7 @@ public class Guerrero extends PersonajePrinc {
      * <p>
      * Adicionalmente utiliza un metodo de habilidad especial,
      * en este caso al ser la clase Guerrero reduce el daño que va a recibir y
-     * aumenta el daño en
-     * funcion de su Fuerza dividido entre dos, estadistica 2 de 6.
+     * aumenta el daño en funcion de su Fuerza dividido entre dos, estadistica 2 de 6.
      * 
      * @param vida_enemigo,damageEnemigo
      * @return devuelve un tipo boolean, si el jugador ha ganado o perdido el

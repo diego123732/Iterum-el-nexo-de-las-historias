@@ -24,6 +24,9 @@ import utilidades.Aleatoriedad;
 import utilidades.TextoLento;
 import utilidades.TextosAscii;
 
+/**
+ * Clase en la que se juntan las historias de la primera parte de la historia junto con el inicio de esta
+ */
 public class Parte1 {
 
     /**
@@ -86,8 +89,7 @@ public class Parte1 {
 
     /**
      * Metodo de historia primera parte que muestra la primera parte de la historia
-     * segun
-     * el camino que haya elegido el jugador, si derecha o izquierda, y un numero
+     * segun el camino que haya elegido el jugador, si derecha o izquierda, y un numero
      * aleatorio
      * <p>
      * Los metodos de las historias estan en el archivo Historias

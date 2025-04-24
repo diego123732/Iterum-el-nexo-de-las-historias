@@ -7,8 +7,16 @@ import utilidades.GuardadoPartida;
 import utilidades.ManipulacionBD;
 import utilidades.TextoLento;
 import utilidades.TextosAscii;
-
+/**
+ * Clase base de la aplicación
+ */
 public class Main {
+    /**
+     * Metodo Principal 'main' de la aplicación
+     * @param args
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws IOException, InterruptedException {
         ManipulacionBD.CrearBDNoExistente();
         boolean salirMenu = false;

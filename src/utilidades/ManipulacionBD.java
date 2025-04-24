@@ -10,6 +10,10 @@ import clases.Partida;
 
 public class ManipulacionBD {
 
+    /**
+     * Metodo que crea la base de datos en la que se meten los datos si no existe y crea tambien la unica tabla 
+     * en la que se introducen datos del videojuego si no existe
+     */
     public static void CrearBDNoExistente () {
         String creacionBD = "create database if not exists iterum;";
         String usoBD = "use iterum;";
@@ -45,6 +49,11 @@ public class ManipulacionBD {
         }
     }
 
+    /**
+     * Metodo que guarda por primera vez una nueva partida la guarda antes de que comience la historia, 
+     * incluso antes de que se cree el personaje de la partida por eso comienza con los valores por defecto. 
+     * @param partida
+     */
     public static void PrimerGuardarDatos (Partida partida) {
         String fechaInicioFormateada = partida.getFECHA_INICIO_PARTIDA().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         String usoBaseDatos = "use iterum;";
@@ -66,6 +75,12 @@ public class ManipulacionBD {
         }
     }
 
+    /**
+     * Metodo que guarda los datos en la base de datos en la partida que se esta jugando.
+     * @see Partida
+     * @see PersonajePrinc 
+     * @param partida
+     */
     public static void GuardarDatos (Partida partida) {
         //--- Parte Fecha inicio ---//
         String fechaInicioFormateada = "'" +
@@ -159,6 +174,11 @@ public class ManipulacionBD {
 
     }
 
+    /**
+     * Ultimo guardado de partida del videojuego, 
+     * cuando se termina la partida se elimina de los archivos locales y se manda a la base de datos.
+     * @param partida
+     */
     public static void UltimoGuardado (Partida partida) {
         //--- Parte Fecha inicio ---//
         String fechaInicioFormateada = "'" +
