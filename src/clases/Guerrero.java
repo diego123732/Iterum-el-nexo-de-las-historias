@@ -76,6 +76,6 @@ public class Guerrero extends PersonajePrinc {
      * prominente del personaje.
      */
     public double habilidadEspecial() {
-        return (this.getEstadisticas()[1] / 2);
+        return (this.getEstadisticas()[PlayerData.FUERZA.getValue()] / 2);
     }
 }

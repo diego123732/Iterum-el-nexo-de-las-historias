@@ -3,7 +3,6 @@ package historias;
 import java.io.IOException;
 
 import clases.PersonajePrinc;
-import clases.PlayerData;
 import clases.Razas;
 import utilidades.LectorBuffRead;
 import utilidades.TextoLento;
@@ -160,9 +159,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
             TextoLento.printSlow(MORDOR_1_7);
             TextoLento.printSlow(MORDOR_1_8);
             LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_MORDOR.getValue(), PlayerData.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
         }
 
         /**
@@ -188,9 +187,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
                 TextoLento.printSlow(MORDOR_2_2_VICTORIA);
                 TextoLento.printSlow(MORDOR_2_3);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_MORDOR.getValue(), PlayerData.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
             } else {
                 TextoLento.printSlow(MORDOR_2_2_DERROTA);
             }
@@ -214,9 +213,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
             TextoLento.printSlow(MORDOR_3_3);
             TextoLento.printSlow(MORDOR_3_4);
             LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_MORDOR.getValue(), PlayerData.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
         }
 
         /**
@@ -242,9 +241,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
             if (personajePrincipal.CombateEntero(Enemigos.ESPECTRO_REY.getVida(), Enemigos.ESPECTRO_REY.getDaño())) {
                 TextosAscii.setRojo();
                 TextoLento.printSlow(MORDOR_4_4_VICTORIA);
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_MORDOR.getValue(), PlayerData.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
             } else {
                 TextoLento.printSlow(MORDOR_4_4_DERROTA);
             }
@@ -269,9 +268,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
             TextoLento.printSlow(LA_REBELION_GOBLIN_1_1);
             TextoLento.printSlow(LA_REBELION_GOBLIN_1_2);
             TextoLento.printSlow(LA_REBELION_GOBLIN_1_3);
-            personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_REBELION_GOBLIN.getValue(), PlayerData.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
         }
 
         /**
@@ -306,9 +305,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
             LectorBuffRead.continuarHistoria();
             TextoLento.printSlow(LA_REBELION_GOBLIN_2_11);
             LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_REBELION_GOBLIN.getValue(), PlayerData.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
         }
 
         /**
@@ -344,9 +343,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
                 TextoLento.printSlow(LA_REBELION_GOBLIN_3_8);
                 TextoLento.printSlow(LA_REBELION_GOBLIN_3_9);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_REBELION_GOBLIN.getValue(), PlayerData.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
             } else {
                 TextoLento.printSlow(LA_REBELION_GOBLIN_3_6_DERROTA);
             }
@@ -379,9 +378,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
                 TextoLento.printSlow(LA_REBELION_GOBLIN_4_3_VICTORIA);
                 TextoLento.printSlow(LA_REBELION_GOBLIN_4_4);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_REBELION_GOBLIN.getValue(), PlayerData.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
             } else {
                 TextoLento.printSlow(LA_REBELION_GOBLIN_4_3_DERROTA);
             }
@@ -437,9 +436,9 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
                 TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_8);
                 TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_9);
                 TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_10);
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_GUERRA_DEL_CLAN_PIEL_BLANCA.getValue(), PlayerData.HISTORIA.getValue());// La guerra del clan piel blanca
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_GUERRA_DEL_CLAN_PIEL_BLANCA.getValue(), DatosHistoria.HISTORIA.getValue());// La guerra del clan piel blanca
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
             } else {
                 TextoLento.printSlow("Por favor elije una de las opciones sabiamente");
             }

@@ -77,6 +77,6 @@ public class Paladin extends PersonajePrinc {
      * prominente del personaje.
      */
     public double habilidadEspecial() {
-        return (this.getEstadisticas()[5] / 2);
+        return (this.getEstadisticas()[PlayerData.SABIDURIA.getValue()] / 2);
     }
 }

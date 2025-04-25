@@ -77,6 +77,6 @@ public class Asesino extends PersonajePrinc {
      * prominente del personaje.
      */
     public double habilidadEspecial() {
-        return (this.getEstadisticas()[0]);
+        return (this.getEstadisticas()[PlayerData.DESTREZA.getValue()]);
     }
 }

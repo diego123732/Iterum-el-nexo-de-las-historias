@@ -13,7 +13,6 @@ import clases.Guerrero;
 import clases.Mago;
 import clases.Paladin;
 import clases.Partida;
-import clases.PlayerData;
 import clases.Razas;
 import clases.Tanque;
 
@@ -123,8 +122,8 @@ public class Historia {
             GuardadoPartida.guardarPartida(numeroPartida, partida);
         }
 
-        if (!(partida.getPersonajePrincipalPartida().getHistoria()[PlayerData.HISTORIA_PARTE1.getValue()]
-        == PlayerData.HISTORIA_TERMINADA.getValue())) {//Si la primera parte no esta terminada
+        if (!(partida.getPersonajePrincipalPartida().getHistoria()[DatosHistoria.HISTORIA_PARTE1.getValue()]
+        == DatosHistoria.HISTORIA_TERMINADA.getValue())) {//Si la primera parte no esta terminada
             // Mensaje inicial en la historia
             MensajeBase();
             // Historia principal, primera parte
@@ -134,10 +133,10 @@ public class Historia {
         }
         
 
-        if (partida.getPersonajePrincipalPartida().getHistoria()[PlayerData.HISTORIA_PARTE1.getValue()] 
-        == PlayerData.HISTORIA_TERMINADA.getValue() && 
-        partida.getPersonajePrincipalPartida().getHistoria()[PlayerData.HISTORIA_PARTE2.getValue()]
-        != PlayerData.HISTORIA_TERMINADA.getValue()) {// Si la parte 1 esta terminada y la parte 2 no lo esta
+        if (partida.getPersonajePrincipalPartida().getHistoria()[DatosHistoria.HISTORIA_PARTE1.getValue()] 
+        == DatosHistoria.HISTORIA_TERMINADA.getValue() && 
+        partida.getPersonajePrincipalPartida().getHistoria()[DatosHistoria.HISTORIA_PARTE2.getValue()]
+        != DatosHistoria.HISTORIA_TERMINADA.getValue()) {// Si la parte 1 esta terminada y la parte 2 no lo esta
 
             // Historia principal, segunda parte
             Parte2.Historia(partida.getPersonajePrincipalPartida());
@@ -145,10 +144,10 @@ public class Historia {
             TextoLento.printSlow("Partida guardada automaticamente...");
         }
 
-        if (partida.getPersonajePrincipalPartida().getHistoria()[PlayerData.HISTORIA_PARTE2.getValue()] 
-        == PlayerData.HISTORIA_TERMINADA.getValue() && 
-        partida.getPersonajePrincipalPartida().getHistoria()[PlayerData.HISTORIA_PARTE3.getValue()]
-        != PlayerData.HISTORIA_TERMINADA.getValue()) {// Si la parte 2 esta terminada y la parte 3 no lo esta
+        if (partida.getPersonajePrincipalPartida().getHistoria()[DatosHistoria.HISTORIA_PARTE2.getValue()] 
+        == DatosHistoria.HISTORIA_TERMINADA.getValue() && 
+        partida.getPersonajePrincipalPartida().getHistoria()[DatosHistoria.HISTORIA_PARTE3.getValue()]
+        != DatosHistoria.HISTORIA_TERMINADA.getValue()) {// Si la parte 2 esta terminada y la parte 3 no lo esta
 
             // Historia principal, tercera parte
             Parte3.Historia(partida.getPersonajePrincipalPartida());
@@ -156,8 +155,8 @@ public class Historia {
             TextoLento.printSlow("Partida guardada automaticamente...");
         }
 
-        if (partida.getPersonajePrincipalPartida().getHistoria()[PlayerData.HISTORIA_PARTE3.getValue()] 
-        == PlayerData.HISTORIA_TERMINADA.getValue()) {// Si la parte 3 esta terminada
+        if (partida.getPersonajePrincipalPartida().getHistoria()[DatosHistoria.HISTORIA_PARTE3.getValue()] 
+        == DatosHistoria.HISTORIA_TERMINADA.getValue()) {// Si la parte 3 esta terminada
             
             // Historia principal, cuarta parte
             Parte4.Historia(partida.getPersonajePrincipalPartida());

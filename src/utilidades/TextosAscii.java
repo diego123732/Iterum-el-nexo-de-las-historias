@@ -1,64 +1,73 @@
 package utilidades;
 
 public class TextosAscii {
+    private static final String COLOR_NEGRO = "\u001B[30m";
+    private static final String COLOR_ROJO = "\u001B[31m";
+    private static final String COLOR_VERDE = "\u001B[32m";
+    private static final String COLOR_AMARILLO = "\u001B[33m";
+    private static final String COLOR_AZUL = "\u001B[34m";
+    private static final String COLOR_MAGENTA = "\u001B[35m";
+    private static final String COLOR_CYAN = "\u001B[36m";
+    private static final String COLOR_BLANCO = "\u001B[37m";
+    private static final String COLOR_RESET = "\u001B[0m";
     /**
      * Metodo que cambia el color de la pantalla al negro
      */
-    public static void setNegro() { System.out.print("\u001B[30m");}
+    public static void setNegro() { System.out.print(COLOR_NEGRO);}
     /**
      * Metodo que cambia el color de la pantalla al rojo
      */
-    public static void setRojo() { System.out.print("\u001B[31m"); }
+    public static void setRojo() { System.out.print(COLOR_ROJO); }
     /**
      * Metodo que cambia el color de la pantalla al verde
      */
-    public static void setVerde() { System.out.print("\u001B[32m"); }
+    public static void setVerde() { System.out.print(COLOR_VERDE); }
     /**
      * Metodo que cambia el color de la pantalla al amarillo
      */
-    public static void setAmarillo() { System.out.print("\u001B[33m"); }
+    public static void setAmarillo() { System.out.print(COLOR_AMARILLO); }
     /**
      * Metodo que cambia el color de la pantalla al azul
      */
-    public static void setAzul() { System.out.print("\u001B[34m"); }
+    public static void setAzul() { System.out.print(COLOR_AZUL); }
     /**
      * Metodo que cambia el color de la pantalla al morado/magenta
      */
-    public static void setMagenta() { System.out.print("\u001B[35m"); }
+    public static void setMagenta() { System.out.print(COLOR_MAGENTA); }
     /**
      * Metodo que cambia el color de la pantalla al azul cyan
      */
-    public static void setCyan() { System.out.print("\u001B[36m"); }
+    public static void setCyan() { System.out.print(COLOR_CYAN); }
     /**
      * Metodo que cambia el color de la pantalla al blanco
      */
-    public static void setBlanco() { System.out.print("\u001B[37m"); }
+    public static void setBlanco() { System.out.print(COLOR_BLANCO); }
 
     /**
      * Metodo que devuelve el texto String del color predefinido
      * @return String color predefinido
      */
-    public static String getRESET () { return "\u001B[0m";}
+    public static String getRESET () { return COLOR_RESET;}
     /**
      * Metodo que devuelve el texto String del color rojo
      * @return String color rojo
      */
-    public static String getROJO () {return "\u001B[31m";}
+    public static String getROJO () {return COLOR_ROJO;}
     /**
      * Metodo que devuelve el texto String del color verde
      * @return String color verde
      */
-    public static String getVERDE () {return "\u001B[32m";}
+    public static String getVERDE () {return COLOR_VERDE;}
     /**
      * Metodo que devuelve el texto String del color azul
      * @return String color azul
      */
-    public static String getAZUL () {return "\u001B[34m";}
+    public static String getAZUL () {return COLOR_AZUL;}
     /**
      * Metodo que devuelve el texto String del color amarillo
      * @return String color amarillo
      */
-    public static String getAMARILLO () {return "\u001B[33m";}
+    public static String getAMARILLO () {return COLOR_AMARILLO;}
 
     /**
      * Metodo que devuelve el texto ascii de bienvenida
@@ -80,7 +89,7 @@ public class TextosAscii {
     /**
      * Metodo que cambia el color de la pantalla al predefinido
      */
-    public static void resetColor() { System.out.print("\u001B[0m"); }
+    public static void resetColor() { System.out.print(COLOR_RESET); }
 
     /**
      * Metodo que formatea un muñeco que simula el personaje del enemigo al jugador

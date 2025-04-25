@@ -7,7 +7,6 @@ import utilidades.TextoLento;
 import utilidades.TextosAscii;
 import clases.Ocupaciones;
 import clases.PersonajePrinc;
-import clases.PlayerData;
 import clases.Razas;
 
 public abstract class Humanos{
@@ -180,9 +179,9 @@ public abstract class Humanos{
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_1_5_MAGO);
             else
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_1_5);
-            personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_MUJER_DE_MORADO.getValue(), PlayerData.HISTORIA.getValue());// La Mujer de Morado
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+            personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_MUJER_DE_MORADO.getValue(), DatosHistoria.HISTORIA.getValue());// La Mujer de Morado
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
         }
 
         /**
@@ -211,9 +210,9 @@ public abstract class Humanos{
                 LectorBuffRead.continuarHistoria();
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_2_5);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_MUJER_DE_MORADO.getValue(), PlayerData.HISTORIA.getValue());// La Mujer de Morado
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_MUJER_DE_MORADO.getValue(), DatosHistoria.HISTORIA.getValue());// La Mujer de Morado
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
             } else {
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_2_2_DERROTA);
             }
@@ -246,9 +245,9 @@ public abstract class Humanos{
                     Enemigos.HUMANO_CULTISTA.getDaño())) {
                 TextosAscii.setAmarillo();
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_3_5_VICTORIA);
-                personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_MUJER_DE_MORADO.getValue(), PlayerData.HISTORIA.getValue());// La Mujer de Morado
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_MUJER_DE_MORADO.getValue(), DatosHistoria.HISTORIA.getValue());// La Mujer de Morado
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
             } else {
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_3_5_DERROTA);
             }
@@ -286,9 +285,9 @@ public abstract class Humanos{
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_4_7);
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_4_8);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_MUJER_DE_MORADO.getValue(), PlayerData.HISTORIA.getValue());// La Mujer de Morado
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_MUJER_DE_MORADO.getValue(), DatosHistoria.HISTORIA.getValue());// La Mujer de Morado
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
             } else {
                 TextoLento.printSlow(LA_MUJER_DE_MORADO_4_5_DERROTA);
             }
@@ -440,9 +439,9 @@ public abstract class Humanos{
                             }
 
                             TextoLento.printSlow(GUERRA_DE_REYES_HERMANOS_1_4_MISIONES_6);
-                            personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_GUERRA_DE_REYES_HERMANOS.getValue(), PlayerData.HISTORIA.getValue());// La guerra de reyes hermanos
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+                            personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_GUERRA_DE_REYES_HERMANOS.getValue(), DatosHistoria.HISTORIA.getValue());// La guerra de reyes hermanos
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
                             break;
 
                         default:
@@ -478,9 +477,9 @@ public abstract class Humanos{
             TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_1_1);
             TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_1_2);
             TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_1_3);
-            personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), PlayerData.HISTORIA.getValue());// El goblin del tutorial
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+            personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), DatosHistoria.HISTORIA.getValue());// El goblin del tutorial
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
         }
 
         /**
@@ -510,9 +509,9 @@ public abstract class Humanos{
                 TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_2_4_VICTORIA);
                 TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_2_5);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), PlayerData.HISTORIA.getValue());// El goblin del tutorial
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), DatosHistoria.HISTORIA.getValue());// El goblin del tutorial
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
             } else {
                 TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_2_4_DERROTA);
             }
@@ -550,9 +549,9 @@ public abstract class Humanos{
             TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_3_11);
             TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_3_12);
             LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), PlayerData.HISTORIA.getValue());// El goblin del tutorial
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+            personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), DatosHistoria.HISTORIA.getValue());// El goblin del tutorial
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
         }
 
         /**
@@ -587,9 +586,9 @@ public abstract class Humanos{
                 TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_4_7);
                 TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_4_8);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Humano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Humanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), PlayerData.HISTORIA.getValue());// El goblin del tutorial
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                personajePrincipal.setHistoria(Razas.Humano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Humanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_GOBLIN_DEL_TUTORIAL.getValue(), DatosHistoria.HISTORIA.getValue());// El goblin del tutorial
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
             } else {
                 TextoLento.printSlow(EL_GOBLIN_DEL_TUTORIAL_4_5_DERROTA);
             }

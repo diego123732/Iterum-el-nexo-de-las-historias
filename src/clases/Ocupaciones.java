@@ -37,6 +37,11 @@ public enum Ocupaciones {
         return equipamiento;
     }
 
+    /**
+     * Muestra las estadisticas de cada personaje, ya no se usa, por que se hizo 
+     * una mejor opcion para la octava version
+     * @deprecated
+     */
     public static void mostrarEstadisticasPersonajes() {
         System.out.println("Estadísticas de los personajes:");
         System.out.printf("%-10s | %s%n", "Personaje", "Dest | Fue | Int | Def | Con | Srt |");
@@ -50,6 +55,11 @@ public enum Ocupaciones {
         System.out.println();
     }
 
+    /**
+     * Muestra el equipamiento de cada personaje, ya no se usa, por que se hizo 
+     * una mejor opcion para la octava version
+     * @deprecated
+     */
     public static void mostrarEquipamientoPersonajes() {
         System.out.println("Equipamiento de los personajes:");
         System.out.printf("%-10s | %13s | %12s | %18s | %17s | %17s |%n", "Personaje", "Mano 1", "Mano 2" , "Cabeza" , "Cuerpo" , "Pies");

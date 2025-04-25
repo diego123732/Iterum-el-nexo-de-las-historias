@@ -2,7 +2,6 @@ package historias;
 
 import java.io.IOException;
 
-import clases.PlayerData;
 import clases.Razas;
 import clases.PersonajePrinc;
 import utilidades.LectorBuffRead;
@@ -192,9 +191,9 @@ public abstract class Enanos{
             } else if (elecionIntrahistoria.equals("representante")) {
                 TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_11_3_1);
                 TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_11_3_2);
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_PUEBLO_ENANO_OWARF.getValue(), PlayerData.HISTORIA.getValue());// El pueblo enanos owarf
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_PUEBLO_ENANO_OWARF.getValue(), DatosHistoria.HISTORIA.getValue());// El pueblo enanos owarf
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
             } else if (elecionIntrahistoria.equals("pasas")) {
             }
             TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_13);
@@ -248,9 +247,9 @@ public abstract class Enanos{
             LectorBuffRead.continuarHistoria();
             TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_17);
             TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_18);
-            personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), PlayerData.HISTORIA.getValue());// La creacion del artefacto mitico
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
         }
 
         /**
@@ -281,9 +280,9 @@ public abstract class Enanos{
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5_VICTORIA);
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_6);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), PlayerData.HISTORIA.getValue());// La creacion del artefacto mitico
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
             } else {
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5_DERROTA);
                 LectorBuffRead.continuarHistoria();
@@ -328,9 +327,9 @@ public abstract class Enanos{
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_9);
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_10);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), PlayerData.HISTORIA.getValue());// La creacion del artefacto mitico
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
             } else {
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_7_DERROTA);
                 LectorBuffRead.continuarHistoria();
@@ -368,9 +367,9 @@ public abstract class Enanos{
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_7);
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_8);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), PlayerData.HISTORIA.getValue());// La creacion del artefacto mitico
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
             } else {
                 TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_5_DERROTA);
                 LectorBuffRead.continuarHistoria();
@@ -410,9 +409,9 @@ public abstract class Enanos{
             TextoLento.printSlow(EL_CODICE_MALDITO_1_9);
             TextoLento.printSlow(EL_CODICE_MALDITO_1_10);
             LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_CODICE_MALDITO.getValue(), PlayerData.HISTORIA.getValue());// El codice maldito
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
         }
 
         public static void ElCodiceMalditoParte2(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
@@ -428,9 +427,9 @@ public abstract class Enanos{
                 TextosAscii.setCyan();
                 TextoLento.printSlow(EL_CODICE_MALDITO_2_5_VICTORIA);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_CODICE_MALDITO.getValue(), PlayerData.HISTORIA.getValue());// El codice maldito
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
             } else {
                 TextoLento.printSlow(EL_CODICE_MALDITO_2_5_DERROTA);
                 LectorBuffRead.continuarHistoria();
@@ -453,9 +452,9 @@ public abstract class Enanos{
                 TextoLento.printSlow(EL_CODICE_MALDITO_3_6_VICTORIA);
                 TextoLento.printSlow(EL_CODICE_MALDITO_3_7);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_CODICE_MALDITO.getValue(), PlayerData.HISTORIA.getValue());// El codice maldito
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
             } else {
                 TextoLento.printSlow(EL_CODICE_MALDITO_3_6_DERROTA);
                 LectorBuffRead.continuarHistoria();
@@ -479,9 +478,9 @@ public abstract class Enanos{
                 LectorBuffRead.continuarHistoria();
                 TextoLento.printSlow(EL_CODICE_MALDITO_4_7);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Enanos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_EL_CODICE_MALDITO.getValue(), PlayerData.HISTORIA.getValue());// El codice maldito
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
             } else {
                 TextoLento.printSlow(EL_CODICE_MALDITO_4_5_DERROTA);
                 LectorBuffRead.continuarHistoria();

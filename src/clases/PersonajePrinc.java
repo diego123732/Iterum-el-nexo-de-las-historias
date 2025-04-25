@@ -6,9 +6,10 @@ import utilidades.Aleatoriedad;
 import utilidades.LectorBuffRead;
 
 /**
- * Clase padre de todos los personajes principales y la que tiene una de las mayores cargas de todo el videojuego
+ * Clase padre de todos los personajes principales y la que tiene una de las
+ * mayores cargas de todo el videojuego
  */
-abstract public class PersonajePrinc{
+abstract public class PersonajePrinc {
     private final String nombre;// Recoge el nombre del personaje del jugador.
     private final Razas raza;// Recoge la raza activa del personaje del jugador, la raza que tiene en el
                              // momento, otros metodos le daran un valor
@@ -35,21 +36,25 @@ abstract public class PersonajePrinc{
         this.partidaPersonaje = partida;
         switch (this.raza) {
             case Razas.Enano:
-                this.setEstadisticas(PlayerData.CONSTITUCION.getValue(), (this.getEstadisticas()[4] + 1)); // da un punto mas de Constitucion
+                this.setEstadisticas(PlayerData.CONSTITUCION.getValue(),
+                        (this.getEstadisticas()[PlayerData.CONSTITUCION.getValue()] + 1)); // da un punto mas de
+                                                                                           // Constitucion
                 break;
 
             case Razas.Humano:
-                this.setDinero((this.getDinero()+10)); // Si es humano tiene mas dinero base
+                this.setDinero((this.getDinero() + 10)); // Si es humano tiene mas dinero base
                 break;
 
             case Razas.Orco:
-            this.setEstadisticas(PlayerData.FUERZA.getValue(), (this.getEstadisticas()[1] + 1)); // da un punto mas de Fuerza
+                this.setEstadisticas(PlayerData.FUERZA.getValue(),
+                        (this.getEstadisticas()[PlayerData.FUERZA.getValue()] + 1)); // da un punto mas de Fuerza
                 break;
 
             case Razas.Elfo:
-            this.setEstadisticas(PlayerData.DESTREZA.getValue(), (this.getEstadisticas()[0] + 1)); // da un punto mas de Destreza
+                this.setEstadisticas(PlayerData.DESTREZA.getValue(),
+                        (this.getEstadisticas()[PlayerData.DESTREZA.getValue()] + 1)); // da un punto mas de Destreza
                 break;
-                
+
             default:
                 break;
         }
@@ -169,19 +174,24 @@ abstract public class PersonajePrinc{
         double vida_equipamiento = 0;
         switch (this.equipamiento[2]) {// Casco del personaje
             case "Sombrero de mago":
-                vida_equipamiento += (PlayerData.SOMBRERO_DE_MAGO_VIDA.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()] / 2));
+                vida_equipamiento += (PlayerData.SOMBRERO_DE_MAGO_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()] / 2));
                 break;
             case "Yelmo barbuta":
-                vida_equipamiento += (PlayerData.YELMO_BARBUTA_VIDA.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()] / 2));
+                vida_equipamiento += (PlayerData.YELMO_BARBUTA_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.FUERZA.getValue()] / 2));
                 break;
             case "Boina":
-                vida_equipamiento += (PlayerData.BOINA_VIDA.getValue() + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2));
+                vida_equipamiento += (PlayerData.BOINA_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2));
                 break;
             case "Capucha":
-                vida_equipamiento += (PlayerData.CAPUCHA_VIDA.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2));
+                vida_equipamiento += (PlayerData.CAPUCHA_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2));
                 break;
             case "Yelmo cónico":
-                vida_equipamiento += (PlayerData.YELMO_CONICO_VIDA.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2));
+                vida_equipamiento += (PlayerData.YELMO_CONICO_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2));
                 break;
 
             default:// No tiene nada equipado en la cabeza
@@ -189,13 +199,16 @@ abstract public class PersonajePrinc{
         }
         switch (this.equipamiento[3]) {// Cuerpo del personaje
             case "Túnica":
-                vida_equipamiento += (PlayerData.TUNICA_ARMADURA_VIDA.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()]));
+                vida_equipamiento += (PlayerData.TUNICA_ARMADURA_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()]));
                 break;
             case "Cota de malla":
-                vida_equipamiento += (PlayerData.COTA_MALLA_VIDA.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()]));
+                vida_equipamiento += (PlayerData.COTA_MALLA_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.CONSTITUCION.getValue()]));
                 break;
             case "Chaleco de cuero":
-                vida_equipamiento += (PlayerData.CHALECO_CUERO_VIDA.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()]));
+                vida_equipamiento += (PlayerData.CHALECO_CUERO_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.DESTREZA.getValue()]));
                 break;
 
             default:// No tiene nada equipado en el cuerpo
@@ -203,7 +216,8 @@ abstract public class PersonajePrinc{
         }
         switch (this.equipamiento[4]) {// Pies del personaje
             case "Zapatos de cuero":
-                vida_equipamiento += (PlayerData.ZAPATOS_CUERO_VIDA.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2));
+                vida_equipamiento += (PlayerData.ZAPATOS_CUERO_VIDA.getValue()
+                        + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2));
                 break;
 
             default:// No tiene nada equipado en los pies
@@ -214,9 +228,11 @@ abstract public class PersonajePrinc{
     }
 
     /**
-     * metodo que devuelve el el daño segun las armas que tenga equipadas el jugador y si el jugador quiere tirar el dado
+     * metodo que devuelve el el daño segun las armas que tenga equipadas el jugador
+     * y si el jugador quiere tirar el dado
      * 
-     * @return dos datos double, el daño total y lo que ha sacado en el dado de veinte
+     * @return dos datos double, el daño total y lo que ha sacado en el dado de
+     *         veinte
      * @throws IOException
      * @see PersonajePrinc
      * @see PlayerData
@@ -228,19 +244,22 @@ abstract public class PersonajePrinc{
         if (dadoVeinteTirado) {
             dadoVeinte = utilidades.Aleatoriedad.dadoVeinte();
         }
-        
+
         if (this.equipamiento[1].isEmpty()) {// en el combate se divide por armas de una o dos manos
             switch (this.equipamiento[0]) /* Calculo de daño en armas de dos manos */ {
 
                 case "Baculo":// daño Baculo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.BACULO_DAMAGE.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()])) * (dadoVeinte / 10)
-                            : PlayerData.BACULO_DAMAGE.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()]);
+                            ? (PlayerData.BACULO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()])) * (dadoVeinte / 10)
+                            : PlayerData.BACULO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()]);
                     break;
-                    
+
                 case "Espadón":// daño Espadón
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()])) * (dadoVeinte / 10)
+                            ? (PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()]))
+                                    * (dadoVeinte / 10)
                             : PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()]);
                     break;
                 default:// No tiene nada equipado en las manos
@@ -251,20 +270,26 @@ abstract public class PersonajePrinc{
 
                 case "Daga basica":// daño daga
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
+                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
                     break;
 
                 case "Crucifijo":// daño crucifijo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.CRUCIFIJO_DAMAGE.getValue() + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.CRUCIFIJO_DAMAGE.getValue() + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2);
+                            ? (PlayerData.CRUCIFIJO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.CRUCIFIJO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2);
                     break;
 
                 case "Mazo":// daño mazo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.MAZO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.MAZO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
+                            ? (PlayerData.MAZO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.MAZO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
                     break;
 
                 default:// No tiene nada equipado en los pies
@@ -274,14 +299,18 @@ abstract public class PersonajePrinc{
 
                 case "Escudo":// daño escudo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.ESCUDO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.ESCUDO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
+                            ? (PlayerData.ESCUDO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.ESCUDO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
                     break;
 
                 case "Daga basica":// daño daga
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
+                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
                     break;
 
                 default:
@@ -289,7 +318,7 @@ abstract public class PersonajePrinc{
             }
 
         }
-        return new double[] {daño_total, dadoVeinte};
+        return new double[] { daño_total, dadoVeinte };
     }
 
     /**
@@ -304,19 +333,22 @@ abstract public class PersonajePrinc{
         double daño_total = 0;
         boolean dadoVeinteTirado = false;
         double dadoVeinte = 1;
-        
+
         if (this.equipamiento[1].isEmpty()) {// en el combate se divide por armas de una o dos manos
             switch (this.equipamiento[0]) /* Calculo de daño en armas de dos manos */ {
 
                 case "Baculo":// daño Baculo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.BACULO_DAMAGE.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()])) * (dadoVeinte / 10)
-                            : PlayerData.BACULO_DAMAGE.getValue() + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()]);
+                            ? (PlayerData.BACULO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()])) * (dadoVeinte / 10)
+                            : PlayerData.BACULO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.INTELIGENCIA.getValue()]);
                     break;
-                    
+
                 case "Espadón":// daño Espadón
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()])) * (dadoVeinte / 10)
+                            ? (PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()]))
+                                    * (dadoVeinte / 10)
                             : PlayerData.ESPADON_DAMAGE.getValue() + (this.estadisticas[PlayerData.FUERZA.getValue()]);
                     break;
                 default:// No tiene nada equipado en las manos
@@ -327,20 +359,26 @@ abstract public class PersonajePrinc{
 
                 case "Daga basica":// daño daga
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
+                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
                     break;
 
                 case "Crucifijo":// daño crucifijo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.CRUCIFIJO_DAMAGE.getValue() + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.CRUCIFIJO_DAMAGE.getValue() + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2);
+                            ? (PlayerData.CRUCIFIJO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.CRUCIFIJO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.SABIDURIA.getValue()] / 2);
                     break;
 
                 case "Mazo":// daño mazo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.MAZO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.MAZO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
+                            ? (PlayerData.MAZO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.MAZO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
                     break;
 
                 default:// No tiene nada equipado en los pies
@@ -350,14 +388,18 @@ abstract public class PersonajePrinc{
 
                 case "Escudo":// daño escudo
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.ESCUDO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.ESCUDO_DAMAGE.getValue() + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
+                            ? (PlayerData.ESCUDO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.ESCUDO_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.CONSTITUCION.getValue()] / 2);
                     break;
 
                 case "Daga basica":// daño daga
                     daño_total += (dadoVeinteTirado)
-                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
-                            : PlayerData.DAGA_BASICA_DAMAGE.getValue() + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
+                            ? (PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2)) * (dadoVeinte / 10)
+                            : PlayerData.DAGA_BASICA_DAMAGE.getValue()
+                                    + (this.estadisticas[PlayerData.DESTREZA.getValue()] / 2);
                     break;
 
                 default:
@@ -414,7 +456,8 @@ abstract public class PersonajePrinc{
         return pruebaAptitud;
     }
 
-    public abstract boolean CombateEntero(double vida_enemigo, double dañoEnemigo) throws IOException, InterruptedException;
+    public abstract boolean CombateEntero(double vida_enemigo, double dañoEnemigo)
+            throws IOException, InterruptedException;
 
     public abstract double habilidadEspecial();
 

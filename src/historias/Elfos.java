@@ -3,7 +3,6 @@ package historias;
 import java.io.IOException;
 
 import clases.PersonajePrinc;
-import clases.PlayerData;
 import clases.Razas;
 import utilidades.Aleatoriedad;
 import utilidades.LectorBuffRead;
@@ -139,10 +138,10 @@ public abstract class Elfos {
             TextoLento.printSlow(ZELDA_1_4);
             LectorBuffRead.continuarHistoria();
             TextoLento.printSlow(ZELDA_1_5);
-            personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_ZELDA.getValue(), PlayerData.HISTORIA.getValue());// Zelda
-            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(),
-                    PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+            personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_ZELDA.getValue(), DatosHistoria.HISTORIA.getValue());// Zelda
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(),
+                    DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
             LectorBuffRead.continuarHistoria();
         }
 
@@ -170,10 +169,10 @@ public abstract class Elfos {
                     Enemigos.CABALLERO_DE_LA_MUERTE.getDaño())) {
                 TextosAscii.setVerde();
                 TextoLento.printSlow(ZELDA_2_4_VICTORIA);
-                personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_ZELDA.getValue(), PlayerData.HISTORIA.getValue());// Zelda
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(),
-                        PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_ZELDA.getValue(), DatosHistoria.HISTORIA.getValue());// Zelda
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(),
+                        DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
             } else {
                 TextoLento.printSlow(ZELDA_2_4_DERROTA);
             }
@@ -215,11 +214,11 @@ public abstract class Elfos {
                         TextosAscii.setVerde();
                         TextoLento.printSlow(ZELDA_3_7_DESTRUCCION);
                         TextoLento.printSlow(ZELDA_3_8);
-                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                        personajePrincipal.setHistoria(PlayerData.HISTORIA_ZELDA.getValue(),
-                                PlayerData.HISTORIA.getValue());// Zelda
-                        personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(),
-                                PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_ZELDA.getValue(),
+                                DatosHistoria.HISTORIA.getValue());// Zelda
+                        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(),
+                                DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
                     } else {
                         TextoLento.printSlow(ZELDA_3_7_DERROTA);
                     }
@@ -231,11 +230,11 @@ public abstract class Elfos {
                         TextosAscii.setVerde();
                         TextoLento.printSlow(ZELDA_3_7_LIBERTAD);
                         TextoLento.printSlow(ZELDA_3_8);
-                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                        personajePrincipal.setHistoria(PlayerData.HISTORIA_ZELDA.getValue(),
-                                PlayerData.HISTORIA.getValue());// Zelda
-                        personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(),
-                                PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_ZELDA.getValue(),
+                                DatosHistoria.HISTORIA.getValue());// Zelda
+                        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(),
+                                DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
                     } else {
                         TextoLento.printSlow(ZELDA_3_7_DERROTA);
                     }
@@ -273,10 +272,10 @@ public abstract class Elfos {
             if (personajePrincipal.CombateEntero(Enemigos.GANONDORF_FINAL.getVida(),
                     Enemigos.GANONDORF_FINAL.getDaño())) {
                 TextosAscii.setVerde();
-                personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_ZELDA.getValue(), PlayerData.HISTORIA.getValue());// Zelda
-                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(),
-                        PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_ZELDA.getValue(), DatosHistoria.HISTORIA.getValue());// Zelda
+                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(),
+                        DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
             } else {
                 TextoLento.printSlow(ZELDA_4_8_DERROTA);
             }
@@ -386,15 +385,15 @@ public abstract class Elfos {
                             case "si":
                                 TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_1_3_VICTORIA_1_1);
 
-                                LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_HUMANO.getValue());
+                                LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_HUMANO.getValue());
 
                                 personajePrincipal.setHistoria(Razas.Elfo.getValue(),
-                                        PlayerData.HISTORIA_RAZA.getValue());// Elfos
+                                        DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
                                 personajePrincipal.setHistoria(
-                                        PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(),
-                                        PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(),
-                                        PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+                                        DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(),
+                                        DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(),
+                                        DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
                                 break;
                             case "batalla":
                                 if (personajePrincipal.CombateEntero(Enemigos.HUMANO_COMANDANTE.getVida(),
@@ -403,16 +402,16 @@ public abstract class Elfos {
                                     TextosAscii.setVerde();
                                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_1_3_VICTORIA_2_VICTORIA);
                                     personajePrincipal.setHistoria(Razas.Elfo.getValue(),
-                                            PlayerData.HISTORIA_RAZA.getValue());// Elfos
+                                            DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
 
                                     personajePrincipal.setHistoria(
-                                            PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(),
-                                            PlayerData.HISTORIA.getValue());// Los protectores del bosque
+                                            DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(),
+                                            DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
 
-                                    personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(),
-                                            PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+                                    personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(),
+                                            DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
 
-                                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_HUMANO.getValue());
+                                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_HUMANO.getValue());
                                 } else {
                                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_1_3_VICTORIA_2_DERROTA);
                                 }
@@ -441,10 +440,10 @@ public abstract class Elfos {
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_1_4_VICTORIA_1);
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_1_4_VICTORIA_2);
                         personajePrincipal.setDinero(personajePrincipal.getDinero() + 10);
-                        LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_ELFO.getValue());
-                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+                        LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_ELFO.getValue());
+                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
                     } else {
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_1_4_DERROTA);
                     }
@@ -473,20 +472,20 @@ public abstract class Elfos {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_2_HUMANOS_4_PROFANAR);
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_2_HUMANOS_5);
                     LectorBuffRead.continuarHistoria();
-                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                    personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                    personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
-                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_ELFO.getValue());
+                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                    personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                    personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_ELFO.getValue());
                 } else if (elecionIntrahistoria.equals("Preservar")) {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_2_HUMANOS_4_PRESERVAR);
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_2_HUMANOS_5);
                     LectorBuffRead.continuarHistoria();
                     LosProtectoresDelBosque.setProbabilidadPaz(
                             LosProtectoresDelBosque.getProbabilidadPaz() + Aleatoriedad.devolverNumero(30));
-                            personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
-                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_HUMANO.getValue());
+                            personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_HUMANO.getValue());
                 }
             } else {
                 // Camino Elfo
@@ -502,10 +501,10 @@ public abstract class Elfos {
                 }
                 TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_2_4);
                 LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE2.getValue());// Parte 2 terminada
-                LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_ELFO.getValue());
+                personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+                LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_ELFO.getValue());
             }
         }
 
@@ -524,18 +523,18 @@ public abstract class Elfos {
                 if (elecionIntrahistoria.equals("Si")) {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_3_HUMANOS_4_SI);
                     LosProtectoresDelBosque.setProbabilidadPaz(LosProtectoresDelBosque.getProbabilidadPaz() - 20);
-                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_HUMANO.getValue());
+                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_HUMANO.getValue());
                 } else if (elecionIntrahistoria.equals("No")) {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_3_HUMANOS_4_NO);
                     LosProtectoresDelBosque.setProbabilidadPaz(
                             LosProtectoresDelBosque.getProbabilidadPaz() + Aleatoriedad.devolverNumero(70));
-                            personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_HUMANO.getValue());
+                            personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_HUMANO.getValue());
                 }
 
             } else {
@@ -549,18 +548,18 @@ public abstract class Elfos {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_3_3_EJECUTAR);
                     LosProtectoresDelBosque
                             .setProbabilidadSalvacion(LosProtectoresDelBosque.getProbabilidadSalvacion() - 20);
-                            personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                            personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_ELFO.getValue());
+                            personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_ELFO.getValue());
                 } else if (elecionIntrahistoria.equals("Convencer")) {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_3_3_CONVENCER);
                     LosProtectoresDelBosque.setProbabilidadSalvacion(
                     LosProtectoresDelBosque.getProbabilidadSalvacion() + Aleatoriedad.devolverNumero(70));
-                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                    personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                    personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_ELFO.getValue());
+                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                    personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                    personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_ELFO.getValue());
                 } else {
                     TextoLento.printSlow("Por favor escriba una de las opciones.");
                 }
@@ -586,10 +585,10 @@ public abstract class Elfos {
                             Enemigos.ELFO_EJERCITO.getDaño())) {
                         TextosAscii.setVerde();
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_4_HUMANOS_3_BATALLA_VICTORIA);
-                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-                        LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_HUMANO.getValue());
+                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                        LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_HUMANO.getValue());
                         LosProtectoresDelBosque.setFinalHumanos(1);
                     } else {
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_4_HUMANOS_3_BATALLA_DERROTA);
@@ -597,10 +596,10 @@ public abstract class Elfos {
                 } else if (elecionIntrahistoria.equals("Paz")) {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_4_HUMANOS_3_PAZ);
                     if ((Aleatoriedad.devolverNumero(LosProtectoresDelBosque.getProbabilidadPaz()) + 1) >= 80) {
-                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-                        LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_HUMANO.getValue());
+                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                        LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_HUMANO.getValue());
                         LosProtectoresDelBosque.setFinalHumanos(2);
                     } else {
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_4_HUMANOS_3_PAZ_FALLADA);
@@ -619,18 +618,18 @@ public abstract class Elfos {
                         "Sacrificio", "Paz");
                 if (elecionIntrahistoria.equals("Sacrificio")) {
                     TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_4_2_VICTORIA);
-                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-                    LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_ELFO.getValue());
+                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                    LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_ELFO.getValue());
                     LosProtectoresDelBosque.setFinalElfos(1);
                 } else if (elecionIntrahistoria.equals("Paz")) {
                     if ((Aleatoriedad.devolverNumero(LosProtectoresDelBosque.getProbabilidadSalvacion()) + 1) >= 80) {
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_4_3_VICTORIA);
-                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), PlayerData.HISTORIA.getValue());// Los protectores del bosque
-                                personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-                        LosProtectoresDelBosque.setBandoElegido(PlayerData.BANDO_ELFO.getValue());
+                        personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LOS_PROTECTORES_DEL_BOSQUE.getValue(), DatosHistoria.HISTORIA.getValue());// Los protectores del bosque
+                                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+                        LosProtectoresDelBosque.setBandoElegido(DatosHistoria.BANDO_ELFO.getValue());
                         LosProtectoresDelBosque.setFinalElfos(2);
                     } else {
                         TextoLento.printSlow(LOS_PROTECTORES_DEL_BOSQUE_4_3_DERROTA);
@@ -687,9 +686,9 @@ public abstract class Elfos {
             switch (elecionIntrahistoria) {
                 case "ayudar":
                     TextoLento.printSlow(LAS_RUINAS_ANTIGUAS_DE_JISTAV_1_12_LA_AYUDA);
-                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), PlayerData.HISTORIA_RAZA.getValue());// Elfos
-                    personajePrincipal.setHistoria(PlayerData.HISTORIA_LAS_RUINAS_ANTIGUAS_DE_JISTAV.getValue(), PlayerData.HISTORIA.getValue());// Las ruinas antiguas de jistav
-                    personajePrincipal.setHistoria(PlayerData.HISTORIA_TERMINADA.getValue(), PlayerData.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+                    personajePrincipal.setHistoria(Razas.Elfo.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Elfos
+                    personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LAS_RUINAS_ANTIGUAS_DE_JISTAV.getValue(), DatosHistoria.HISTORIA.getValue());// Las ruinas antiguas de jistav
+                    personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
                     break;
 
                 default:

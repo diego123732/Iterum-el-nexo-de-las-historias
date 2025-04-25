@@ -73,6 +73,6 @@ public class Tanque extends PersonajePrinc {
      * Metodo que devuelve un numero en funcion de la estadistica base mas prominente del personaje. 
      */
     public double habilidadEspecial () {
-        return (this.getEstadisticas()[4]/2);
+        return (this.getEstadisticas()[PlayerData.CONSTITUCION.getValue()]/2);
     }
 }

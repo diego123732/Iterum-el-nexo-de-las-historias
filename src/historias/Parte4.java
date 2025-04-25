@@ -27,12 +27,12 @@ public class Parte4 {
     public static void Historia(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
         String eleccionIntraHistoria = "";
         System.out.println("\nParte 4.\n");
-        switch (personajePrincipal.getHistoria()[0]) {
+        switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA_RAZA.getValue()]) {
 
             // Camino de los elfos
             case 1:
             TextosAscii.setVerde();
-                switch (personajePrincipal.getHistoria()[1]) {
+                switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA.getValue()]) {
                     case 1:
                         // Historia 1: Zelda
                         Zelda.ZeldaParte4(personajePrincipal);
@@ -52,7 +52,7 @@ public class Parte4 {
             // Camino de los Humanos
             case 2:
             TextosAscii.setAmarillo();
-                switch (personajePrincipal.getHistoria()[1]) {
+                switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA.getValue()]) {
                     // Historia 1: La mujer de morado
                     case 1:
                         LaMujerDeMorado.LaMujerDeMoradoParte4(personajePrincipal);
@@ -70,7 +70,7 @@ public class Parte4 {
             // Camino de los enanos
             case 3:
             TextosAscii.setCyan();
-                switch (personajePrincipal.getHistoria()[1]) {
+                switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA.getValue()]) {
                     // Historia 1: El pueblo enano Owarf
                     case 1:
                         // ElPuebloEnanoOwarf.ElPuebloEnanoOwarfParte4();
@@ -88,7 +88,7 @@ public class Parte4 {
             // Camino de los orcos
             case 4:
             TextosAscii.setRojo();
-                switch (personajePrincipal.getHistoria()[1]) {
+                switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA.getValue()]) {
                     // Historia 1: Mordor
                     case 1:
                         Mordor.MordorParte4(personajePrincipal);

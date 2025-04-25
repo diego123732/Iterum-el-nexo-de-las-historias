@@ -76,6 +76,6 @@ public class Curandero extends PersonajePrinc {
      * prominente del personaje.
      */
     public double habilidadEspecial() {
-        return (this.getEstadisticas()[3]);
+        return (this.getEstadisticas()[PlayerData.CARACTER.getValue()]);
     }
 }
