@@ -35,64 +35,64 @@ private static final String MORDOR_4_3 = "\"No permitiré que destruyas lo que n
 private static final String MORDOR_4_4 = "Un combate mortal se desata en el corazón de la montaña.";
 private static final String MORDOR_4_4_VICTORIA = "Cada golpe hace temblar la tierra, pero finalmente, con un último esfuerzo, logras derrotarlo. \nExhausto y herido, avanzas hasta el borde del abismo y, con una última mirada, arrojas el anillo al fuego eterno.";
 private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes al volcán en erupción. \nEl espectro entonces toma el anillo y se lo pone. \nMientras el volcán empieza a volverse loco, empieza a formarse una gran niebla; el presagio de una gran desgracia. \nHas muerto.";
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_1 = "Después de caminar durante días llegas al territorio orco, pero llevas demasiados días sin comer y la temperatura del territorio orco no te favorece.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_1 = "Después de caminar durante días llegas al territorio orco, pero llevas demasiados días sin comer y la temperatura del territorio orco no te favorece.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_2 = "Te empiezas a marear por falta de fluidos y te desmayas.\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_2 = "Te empiezas a marear por falta de fluidos y te desmayas.\n"
             +
             "Al levantarte, contrario al destino que pensabas que tenías, sigues vivo. Te incorporas y notas que te encuentras en una tienda de campaña.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_3 = "Después de incorporarte, ves cómo se abre la lona. De entre ella aparece un orco con una piel de lobo a sus espaldas y un collar de dientes humanos.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_3 = "Después de incorporarte, ves cómo se abre la lona. De entre ella aparece un orco con una piel de lobo a sus espaldas y un collar de dientes humanos.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_4 = "Tú te asustas, nunca habías visto un orco y menos uno tan grande y con tantas cicatrices. Rápidamente sacas tu arma y la apuntas hacia él.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_4 = "Tú te asustas, nunca habías visto un orco y menos uno tan grande y con tantas cicatrices. Rápidamente sacas tu arma y la apuntas hacia él.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_5 = "Él se ríe y te dice en lenguaje humano casi incomprensible: -Jajajajaja, tranquilo humano, yo no ser malo. Necesitarías un cuchillo más grande para hacerme daño.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_5 = "Él se ríe y te dice en lenguaje humano casi incomprensible: -Jajajajaja, tranquilo humano, yo no ser malo. Necesitarías un cuchillo más grande para hacerme daño.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_6 = "Te acerca un cuenco, dentro hay tripas y sesos de jabalí y una sopa que huele a excremento de algún animal.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_6 = "Te acerca un cuenco, dentro hay tripas y sesos de jabalí y una sopa que huele a excremento de algún animal.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7 = "No crees en él y decides combatirlo (Escribe batalla)";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7 = "No crees en él y decides combatirlo (Escribe batalla)";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7_DESENLACE = "Antes de que puedas utilizar tu arma, te encuentras muerto sobre la lona en la que dormías. "
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7_DESENLACE = "Antes de que puedas utilizar tu arma, te encuentras muerto sobre la lona en la que dormías. "
             +
             "Sin ti, el pueblo orco se sumirá en la magia oscura y ninguna raza los podrá parar.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8 = "¿Quién eres? ¿Dónde estoy? (Escribe hablar)";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8 = "¿Quién eres? ¿Dónde estoy? (Escribe hablar)";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_1 = "-Yo ser Piel Blanca, un comandante orco, y tú estar en problemas. Eres muy fuerte como para llegar hasta aquí tú solo.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_1 = "-Yo ser Piel Blanca, un comandante orco, y tú estar en problemas. Eres muy fuerte como para llegar hasta aquí tú solo.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_2 = "-¡¿Dónde estoy?!- le dices sin dejar de apuntarle con tu arma.\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_2 = "-¡¿Dónde estoy?!- le dices sin dejar de apuntarle con tu arma.\n"
             +
             "-Esto es un campamento orco, el campamento de los pieles blancas.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_3 = "Sumido en tu inferioridad de número y fuerza, te rindes y bajas tu arma.\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_3 = "Sumido en tu inferioridad de número y fuerza, te rindes y bajas tu arma.\n"
             +
             "-Pequeño humano, estabas en mitad del campo de batalla. Es extraño que sigas en pie.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_4 = "Cansado de tener una charla con un orco que no conoces, le dices:\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_4 = "Cansado de tener una charla con un orco que no conoces, le dices:\n"
             +
             "-¿Necesitas algo de mí o me puedo ir?\n" +
             "Él te responde:\n" +
             "-La verdad, humano, es que necesitamos tu ayuda.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_5 = "-Hace unos días encontré el ultraje del chamán de nuestra tribu. Lo encontré sacrificando a compañeros para hacer rituales de magia oscura.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_5 = "-Hace unos días encontré el ultraje del chamán de nuestra tribu. Lo encontré sacrificando a compañeros para hacer rituales de magia oscura.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_6 = "-En cuanto volví, se lo conté a la tribu, lo que empezó la guerra contra el chamán en la que estamos ahora.\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_6 = "-En cuanto volví, se lo conté a la tribu, lo que empezó la guerra contra el chamán en la que estamos ahora.\n"
             +
             "-En medio de todo esto apareces tú, humano, sin agua ni comida.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_7 = "-Necesitamos tu ayuda para reponer recursos dada la necesidad de nuestra tribu.\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_7 = "-Necesitamos tu ayuda para reponer recursos dada la necesidad de nuestra tribu.\n"
             +
             "-El problema es que siempre que vamos a las aldeas humanas a por alimento, nos echan.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_8 = "-Necesito que vayas a una de estas aldeas humanas a por cualquier cosa.\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_8 = "-Necesito que vayas a una de estas aldeas humanas a por cualquier cosa.\n"
             +
             "Le respondes inmediatamente:\n" +
             "-Por supuesto, Piel Blanca. De alguna forma tendré que devolveros el favor por salvarme la vida.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_9 = "Piel Blanca te da una bolsa con dinero y te encaminas a la aldea humana.\n"
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_9 = "Piel Blanca te da una bolsa con dinero y te encaminas a la aldea humana.\n"
             +
             "Mientras caminas por el campamento de los pieles blancas, ves cómo además de una mirada de desprecio, ven en ti la única esperanza que les queda para encaminar su guerra.";
 
-    public static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_10 = "Recibes 100 monedas.";
+    private static final String LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_10 = "Recibes 100 monedas.";
 
     private static final String LA_REBELION_GOBLIN_1_1 = "Mientras tu te estas llendo, lejos de tu mirada, una gran y espesa niebla empieza a engullir al goblin que habias dejado moribundo en el suelo.";
     private static final String LA_REBELION_GOBLIN_1_2 = "Al esfumarse esa niebla aparece una pequeña sombra; -Así que hay un aventurero abusando de mis peones...";
@@ -129,319 +129,301 @@ private static final String MORDOR_4_4_DERROTA = "El espectro te derrota y caes 
     private static final String LA_REBELION_GOBLIN_4_3_DERROTA = "Eres superado por la magia del mago y caes totalmente indefenso. \nEl mago reúne todas sus fuerzas y te destruye junto con todo tu ejército. \nHas muerto.";
     private static final String LA_REBELION_GOBLIN_4_4 = "En su último intento por salvarse, el mago lanza un hechizo devastador, pero ya es demasiado tarde. \nEl castillo comienza a colapsar, y con él, la magia del mago se desvanece. \nLa victoria es tuya.";
 
+
     /**
-     * Clase de los Orcos que recoge las partes de la Historia Mordor
+     * Primera parte de la historia de los enanos; Mordor, El anillo de poder.
+     * <p>
+     * En esta parte el jugador se encuentra con la tarea de destruir el anillo de
+     * poder unico para que no caiga en malas manos.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see Mordor
+     * @see PersonajePrinc
      */
-    public class Mordor extends Orcos {
+    public static void MordorParte1(PersonajePrinc personajePrincipal) throws IOException, InterruptedException, InterruptedException {
 
-        /**
-         * Primera parte de la historia de los enanos; Mordor, El anillo de poder.
-         * <p>
-         * En esta parte el jugador se encuentra con la tarea de destruir el anillo de
-         * poder unico para que no caiga en malas manos.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see Mordor
-         * @see PersonajePrinc
-         */
-        public static void MordorParte1(PersonajePrinc personajePrincipal) throws IOException, InterruptedException, InterruptedException {
+        TextoLento.printSlow(MORDOR_1_1);
+        TextoLento.printSlow(MORDOR_1_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(MORDOR_1_3);
+        TextoLento.printSlow(MORDOR_1_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(MORDOR_1_5);
+        TextoLento.printSlow(MORDOR_1_6);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(MORDOR_1_7);
+        TextoLento.printSlow(MORDOR_1_8);
+        LectorBuffRead.continuarHistoria();
+        personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+    }
 
-            TextoLento.printSlow(MORDOR_1_1);
-            TextoLento.printSlow(MORDOR_1_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(MORDOR_1_3);
-            TextoLento.printSlow(MORDOR_1_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(MORDOR_1_5);
-            TextoLento.printSlow(MORDOR_1_6);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(MORDOR_1_7);
-            TextoLento.printSlow(MORDOR_1_8);
+    /**
+     * Segunda parte de la historia de los enanos; Mordor, La Huida y la
+     * Persecución.
+     * <p>
+     * En esta parte el jugador se encuentra perseguido por un espectro que quiere
+     * conseguir el anillo.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see Batalla
+     * @see clases
+     * @see Mordor
+     * @see PersonajePrinc
+     */
+    public static void MordorParte2(PersonajePrinc personajePrincipal) throws IOException, InterruptedException, InterruptedException {
+        TextoLento.printSlow(MORDOR_2_1);
+        TextoLento.printSlow(MORDOR_2_2);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.CombateEntero(Enemigos.ESPECTRO.getVida(), Enemigos.ESPECTRO.getDaño())) {
+            TextosAscii.setRojo();
+            TextoLento.printSlow(MORDOR_2_2_VICTORIA);
+            TextoLento.printSlow(MORDOR_2_3);
             LectorBuffRead.continuarHistoria();
             personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
-        }
-
-        /**
-         * Segunda parte de la historia de los enanos; Mordor, La Huida y la
-         * Persecución.
-         * <p>
-         * En esta parte el jugador se encuentra perseguido por un espectro que quiere
-         * conseguir el anillo.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see Batalla
-         * @see clases
-         * @see Mordor
-         * @see PersonajePrinc
-         */
-        public static void MordorParte2(PersonajePrinc personajePrincipal) throws IOException, InterruptedException, InterruptedException {
-            TextoLento.printSlow(MORDOR_2_1);
-            TextoLento.printSlow(MORDOR_2_2);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.CombateEntero(Enemigos.ESPECTRO.getVida(), Enemigos.ESPECTRO.getDaño())) {
-                TextosAscii.setRojo();
-                TextoLento.printSlow(MORDOR_2_2_VICTORIA);
-                TextoLento.printSlow(MORDOR_2_3);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
-            } else {
-                TextoLento.printSlow(MORDOR_2_2_DERROTA);
-            }
-        }
-
-        /**
-         * Tercera parte de la historia de los enanos; Mordor, Los Cultistas del Olvido.
-         * <p>
-         * En esta parte el jugador se encuentra con el verdadero problema del anillo,
-         * los cultistas que quiern utilizar su poder para su propio beneficio.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see Mordor
-         * @see PersonajePrinc
-         */
-        public static void MordorParte3(PersonajePrinc personajePrincipal) throws IOException, InterruptedException, InterruptedException {
-            TextoLento.printSlow(MORDOR_3_1);
-            TextoLento.printSlow(MORDOR_3_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(MORDOR_3_3);
-            TextoLento.printSlow(MORDOR_3_4);
-            LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-        }
-
-        /**
-         * Cuarta parte de la historia de los enanos; Mordor, El Último Sendero.
-         * <p>
-         * En esta parte el jugador se encuentra con el espectro rey y pelea contra el
-         * para destruir el anillo.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see Batalla
-         * @see clases
-         * @see Mordor
-         * @see PersonajePrinc
-         */
-        public static void MordorParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(MORDOR_4_1);
-            TextoLento.printSlow(MORDOR_4_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(MORDOR_4_3);
-            TextoLento.printSlow(MORDOR_4_4);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.CombateEntero(Enemigos.ESPECTRO_REY.getVida(), Enemigos.ESPECTRO_REY.getDaño())) {
-                TextosAscii.setRojo();
-                TextoLento.printSlow(MORDOR_4_4_VICTORIA);
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-            } else {
-                TextoLento.printSlow(MORDOR_4_4_DERROTA);
-            }
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+        } else {
+            TextoLento.printSlow(MORDOR_2_2_DERROTA);
         }
     }
 
     /**
-     * Clase de los Orcos que recoge las partes de la Historia La Rebelion Goblin
+     * Tercera parte de la historia de los enanos; Mordor, Los Cultistas del Olvido.
+     * <p>
+     * En esta parte el jugador se encuentra con el verdadero problema del anillo,
+     * los cultistas que quiern utilizar su poder para su propio beneficio.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see Mordor
+     * @see PersonajePrinc
      */
-    public class LaRebelionGoblin extends Orcos {
+    public static void MordorParte3(PersonajePrinc personajePrincipal) throws IOException, InterruptedException, InterruptedException {
+        TextoLento.printSlow(MORDOR_3_1);
+        TextoLento.printSlow(MORDOR_3_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(MORDOR_3_3);
+        TextoLento.printSlow(MORDOR_3_4);
+        LectorBuffRead.continuarHistoria();
+        personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+    }
 
-        /**
-         * Primera parte de la historia de los orcos; La Rebelion Goblin, La muerte del
-         * Goblin.
-         * <p>
-         * En esta primera parte solo se deja caer que existe una amenaza que hace
-         * peligrar al jugador
-         * @see LaRebelionGoblin
-         * @see PersonajePrinc
-         */
-        public static void LaRebelionGoblinParte1(PersonajePrinc personajePrincipal) throws InterruptedException{
-            TextoLento.printSlow(LA_REBELION_GOBLIN_1_1);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_1_2);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_1_3);
+    /**
+     * Cuarta parte de la historia de los enanos; Mordor, El Último Sendero.
+     * <p>
+     * En esta parte el jugador se encuentra con el espectro rey y pelea contra el
+     * para destruir el anillo.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see Batalla
+     * @see clases
+     * @see Mordor
+     * @see PersonajePrinc
+     */
+    public static void MordorParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(MORDOR_4_1);
+        TextoLento.printSlow(MORDOR_4_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(MORDOR_4_3);
+        TextoLento.printSlow(MORDOR_4_4);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.CombateEntero(Enemigos.ESPECTRO_REY.getVida(), Enemigos.ESPECTRO_REY.getDaño())) {
+            TextosAscii.setRojo();
+            TextoLento.printSlow(MORDOR_4_4_VICTORIA);
             personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
-        }
-
-        /**
-         * Segunda parte de la historia de los orcos; La Rebelion Goblin, La Rebelión
-         * Comienza.
-         * <p>
-         * En esta segunda parte el jugador se decide a combatir a El Mago y quiere
-         * conseguir la ayuda de un pueblo de goblins.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see Batalla
-         * @see clases
-         * @see LaRebelionGoblin
-         * @see PersonajePrinc
-         */
-        public static void LaRebelionGoblinParte2(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_1);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_3);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_5);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_6);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_7);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_8);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_9);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_10);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_2_11);
-            LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
-        }
-
-        /**
-         * Tercera parte de la historia de los orcos; La Rebelion Goblin, El Ejército de
-         * la Libertad.
-         * <p>
-         * En esta tercera parte el jugador se encuentra con los siervos de El Mago, que
-         * amenazan la vida del jugador y la de los goblins que le siguen.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see clases
-         * @see Batalla
-         * @see LaRebelionGoblin
-         * @see PersonajePrinc
-         */
-        public static void LaRebelionGoblinParte3(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(LA_REBELION_GOBLIN_3_1);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_3_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_3_3);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_3_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_3_5);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_3_6);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.CombateEntero(Enemigos.GOBLIN_GENERAL.getVida(),
-                    Enemigos.GOBLIN_GENERAL.getDaño())) {
-                TextosAscii.setRojo();
-                TextoLento.printSlow(LA_REBELION_GOBLIN_3_6_VICTORIA);
-                TextoLento.printSlow(LA_REBELION_GOBLIN_3_7);
-                LectorBuffRead.continuarHistoria();
-                TextoLento.printSlow(LA_REBELION_GOBLIN_3_8);
-                TextoLento.printSlow(LA_REBELION_GOBLIN_3_9);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-            } else {
-                TextoLento.printSlow(LA_REBELION_GOBLIN_3_6_DERROTA);
-            }
-        }
-
-        /**
-         * Cuarta parte de la historia de los orcos; La Rebelion Goblin, La Batalla
-         * Final.
-         * <p>
-         * En esta cuarta parte el jugador se enfrenta a El Mago, un abusador de
-         * goblins.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see clases
-         * @see Batalla
-         * @see LaRebelionGoblin
-         * @see PersonajePrinc
-         */
-        public static void LaRebelionGoblinParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(LA_REBELION_GOBLIN_4_1);
-            TextoLento.printSlow(LA_REBELION_GOBLIN_4_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_REBELION_GOBLIN_4_3);
-            LectorBuffRead.continuarHistoria();
-
-            if (personajePrincipal.CombateEntero(Enemigos.HUMANO_EL_MAGO.getVida(),
-                    Enemigos.HUMANO_EL_MAGO.getDaño())) {
-                TextosAscii.setRojo();
-                TextoLento.printSlow(LA_REBELION_GOBLIN_4_3_VICTORIA);
-                TextoLento.printSlow(LA_REBELION_GOBLIN_4_4);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-            } else {
-                TextoLento.printSlow(LA_REBELION_GOBLIN_4_3_DERROTA);
-            }
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_MORDOR.getValue(), DatosHistoria.HISTORIA.getValue());// Mordor
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+        } else {
+            TextoLento.printSlow(MORDOR_4_4_DERROTA);
         }
     }
 
     /**
-     * Clase de los Orcos que recoge las partes de la Historia La Guerra del Clan
-     * Piel Blanca
+     * Primera parte de la historia de los orcos; La Rebelion Goblin, La muerte del
+     * Goblin.
+     * <p>
+     * En esta primera parte solo se deja caer que existe una amenaza que hace
+     * peligrar al jugador
+     * @see LaRebelionGoblin
+     * @see PersonajePrinc
      */
-    public class LaGuerraDelClanPielBlanca extends Orcos {
+    public static void LaRebelionGoblinParte1(PersonajePrinc personajePrincipal) throws InterruptedException{
+        TextoLento.printSlow(LA_REBELION_GOBLIN_1_1);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_1_2);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_1_3);
+        personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+    }
 
-        /**
-         * Primera parte de la historia de los orcos; La guerra del clan piel blanca
-         * <p>
-         * En esta primera parte el jugador se encuentra en medio de la guerra que tiene
-         * el clan piel blanca y les promete que les ayudara en su pelea.
-         * 
-         * @param primerDesenlaceBucleSalir
-         * @param elecionIntrahistoria
-         * @param buffer
-         * @see HistoriaDatos
-         * @see PersonajePrinc
-         */
-        public static void LaGuerraDelClanPielBlancaParte1(
-                String elecionIntrahistoria,
-                PersonajePrinc personajePrincipal)
-                throws IOException, InterruptedException {
+    /**
+     * Segunda parte de la historia de los orcos; La Rebelion Goblin, La Rebelión
+     * Comienza.
+     * <p>
+     * En esta segunda parte el jugador se decide a combatir a El Mago y quiere
+     * conseguir la ayuda de un pueblo de goblins.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see Batalla
+     * @see clases
+     * @see LaRebelionGoblin
+     * @see PersonajePrinc
+     */
+    public static void LaRebelionGoblinParte2(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_1);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_3);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_5);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_6);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_7);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_8);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_9);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_10);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_2_11);
+        LectorBuffRead.continuarHistoria();
+        personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+    }
 
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_1);
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_2);
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_3);
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_4);
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_5);
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_6);
+    /**
+     * Tercera parte de la historia de los orcos; La Rebelion Goblin, El Ejército de
+     * la Libertad.
+     * <p>
+     * En esta tercera parte el jugador se encuentra con los siervos de El Mago, que
+     * amenazan la vida del jugador y la de los goblins que le siguen.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see clases
+     * @see Batalla
+     * @see LaRebelionGoblin
+     * @see PersonajePrinc
+     */
+    public static void LaRebelionGoblinParte3(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(LA_REBELION_GOBLIN_3_1);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_3_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_3_3);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_3_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_3_5);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_3_6);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.CombateEntero(Enemigos.GOBLIN_GENERAL.getVida(),
+                Enemigos.GOBLIN_GENERAL.getDaño())) {
+            TextosAscii.setRojo();
+            TextoLento.printSlow(LA_REBELION_GOBLIN_3_6_VICTORIA);
+            TextoLento.printSlow(LA_REBELION_GOBLIN_3_7);
+            LectorBuffRead.continuarHistoria();
+            TextoLento.printSlow(LA_REBELION_GOBLIN_3_8);
+            TextoLento.printSlow(LA_REBELION_GOBLIN_3_9);
+            LectorBuffRead.continuarHistoria();
+            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+        } else {
+            TextoLento.printSlow(LA_REBELION_GOBLIN_3_6_DERROTA);
+        }
+    }
 
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7);// a partir de aqui
-            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8);
-            elecionIntrahistoria = LectorBuffRead.leer((LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7 + "\n"
-                    + LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8 + "\n"),
-                    "batalla", "hablar");
+    /**
+     * Cuarta parte de la historia de los orcos; La Rebelion Goblin, La Batalla
+     * Final.
+     * <p>
+     * En esta cuarta parte el jugador se enfrenta a El Mago, un abusador de
+     * goblins.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see clases
+     * @see Batalla
+     * @see LaRebelionGoblin
+     * @see PersonajePrinc
+     */
+    public static void LaRebelionGoblinParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(LA_REBELION_GOBLIN_4_1);
+        TextoLento.printSlow(LA_REBELION_GOBLIN_4_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_REBELION_GOBLIN_4_3);
+        LectorBuffRead.continuarHistoria();
 
-            if (elecionIntrahistoria.equals("batalla")) {
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7_DESENLACE);
-            } else if (elecionIntrahistoria.equals("hablar")) {
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_1);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_2);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_3);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_4);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_5);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_6);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_7);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_8);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_9);
-                TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_10);
-                personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_GUERRA_DEL_CLAN_PIEL_BLANCA.getValue(), DatosHistoria.HISTORIA.getValue());// La guerra del clan piel blanca
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
-            } else {
-                TextoLento.printSlow("Por favor elije una de las opciones sabiamente");
-            }
+        if (personajePrincipal.CombateEntero(Enemigos.HUMANO_EL_MAGO.getVida(),
+                Enemigos.HUMANO_EL_MAGO.getDaño())) {
+            TextosAscii.setRojo();
+            TextoLento.printSlow(LA_REBELION_GOBLIN_4_3_VICTORIA);
+            TextoLento.printSlow(LA_REBELION_GOBLIN_4_4);
+            LectorBuffRead.continuarHistoria();
+            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_REBELION_GOBLIN.getValue(), DatosHistoria.HISTORIA.getValue());// La rebelion goblin
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+        } else {
+            TextoLento.printSlow(LA_REBELION_GOBLIN_4_3_DERROTA);
+        }
+    }
+
+    /**
+     * Primera parte de la historia de los orcos; La guerra del clan piel blanca
+     * <p>
+     * En esta primera parte el jugador se encuentra en medio de la guerra que tiene
+     * el clan piel blanca y les promete que les ayudara en su pelea.
+     * 
+     * @param primerDesenlaceBucleSalir
+     * @param elecionIntrahistoria
+     * @param buffer
+     * @see HistoriaDatos
+     * @see PersonajePrinc
+     */
+    public static void LaGuerraDelClanPielBlancaParte1(
+            String elecionIntrahistoria,
+            PersonajePrinc personajePrincipal)
+            throws IOException, InterruptedException {
+
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_1);
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_2);
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_3);
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_4);
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_5);
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_6);
+
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7);// a partir de aqui
+        TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8);
+        elecionIntrahistoria = LectorBuffRead.leer((LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7 + "\n"
+                + LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8 + "\n"),
+                "batalla", "hablar");
+
+        if (elecionIntrahistoria.equals("batalla")) {
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_7_DESENLACE);
+        } else if (elecionIntrahistoria.equals("hablar")) {
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_1);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_2);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_3);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_4);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_5);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_6);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_7);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_8);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_9);
+            TextoLento.printSlow(LA_GUERRA_DEL_CLAN_PIEL_BLANCA_1_8_10);
+            personajePrincipal.setHistoria(Razas.Orco.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Orcos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_GUERRA_DEL_CLAN_PIEL_BLANCA.getValue(), DatosHistoria.HISTORIA.getValue());// La guerra del clan piel blanca
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+        } else {
+            TextoLento.printSlow("Por favor elije una de las opciones sabiamente");
         }
     }
 }

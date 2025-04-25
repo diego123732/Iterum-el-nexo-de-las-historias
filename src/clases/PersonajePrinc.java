@@ -234,7 +234,6 @@ abstract public class PersonajePrinc {
      * @return dos datos double, el daño total y lo que ha sacado en el dado de
      *         veinte
      * @throws IOException
-     * @see PersonajePrinc
      * @see PlayerData
      */
     public double[] Combate() throws IOException, InterruptedException {
@@ -326,7 +325,6 @@ abstract public class PersonajePrinc {
      * 
      * @return dos datos double, el daño total
      * @throws IOException
-     * @see PersonajePrinc
      * @see PlayerData
      */
     public double DañoSegunArmas() {

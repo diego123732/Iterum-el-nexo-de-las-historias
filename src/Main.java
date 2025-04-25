@@ -35,7 +35,7 @@ public class Main {
             TextoLento.printSlow("Elija una opcion del menu:");
             switch (utilidades.LectorBuffRead.leer("1: Historia Principal  2: Tutorial 3: Partidas Guardadas  4: Salir del juego", 1, 4)) {
                 case 1:
-                    numeroPartida = GuardadoPartida.elegirPartida();
+                    numeroPartida = GuardadoPartida.ElegirPartida();
 
                     // Y el hueco se lo lleva la historia para meter los datos luego
                     Historia.historia(numeroPartida);

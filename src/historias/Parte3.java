@@ -3,14 +3,7 @@ package historias;
 import java.io.IOException;
 
 import clases.PersonajePrinc;
-import historias.Elfos.LosProtectoresDelBosque;
-import historias.Elfos.Zelda;
-import historias.Enanos.ElCodiceMaldito;
-import historias.Enanos.LaCreacionDelArtefactoMitico;
-import historias.Humanos.ElGoblinDelTutorial;
-import historias.Humanos.LaMujerDeMorado;
-import historias.Orcos.LaRebelionGoblin;
-import historias.Orcos.Mordor;
+
 import utilidades.TextosAscii;
 /**
  * Clase en la que se juntan las historias de la cuarta parte de la historia
@@ -36,11 +29,11 @@ public class Parte3 {
                 switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA.getValue()]) {
                     // Historia 1: Zelda
                     case 1:
-                        Zelda.ZeldaParte3(eleccionIntraHistoria, personajePrincipal);
+                        Elfos.ZeldaParte3(eleccionIntraHistoria, personajePrincipal);
                         break;
                     // Historia 2: Los protectores del bosque
                     case 2:
-                        LosProtectoresDelBosque.LosProtectoresDelBosqueParte3(eleccionIntraHistoria,
+                        Elfos.LosProtectoresDelBosqueParte3(eleccionIntraHistoria,
                                 personajePrincipal);
                         break;
                     // Historia 3: Las ruinas antiguas de Jistav
@@ -55,7 +48,7 @@ public class Parte3 {
                 switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA.getValue()]) {
                     // Historia 1: La mujer de morado
                     case 1:
-                        LaMujerDeMorado.LaMujerDeMoradoParte3(personajePrincipal);
+                        Humanos.LaMujerDeMoradoParte3(personajePrincipal);
                         break;
                     // Historia 2: La guerra de reyes hermanos
                     case 2:
@@ -63,7 +56,7 @@ public class Parte3 {
                         break;
                     // Historia 3: El goblin del tutorial
                     default:
-                        ElGoblinDelTutorial.ElGoblinDelTutorialParte3(personajePrincipal);
+                        Humanos.ElGoblinDelTutorialParte3(personajePrincipal);
                         break;
                 }
                 break;
@@ -77,11 +70,11 @@ public class Parte3 {
                         break;
                     // Historia 2: La creacion del artefacto mitico
                     case 2:
-                        LaCreacionDelArtefactoMitico.LaCreacionDelArtefactoMiticoParte3(personajePrincipal);
+                        Enanos.LaCreacionDelArtefactoMiticoParte3(personajePrincipal);
                         break;
                     // Historia 3: El codice maldito
                     default:
-                        ElCodiceMaldito.ElCodiceMalditoParte3(personajePrincipal);
+                        Enanos.ElCodiceMalditoParte3(personajePrincipal);
                         break;
                 }
                 break;
@@ -91,11 +84,11 @@ public class Parte3 {
                 switch (personajePrincipal.getHistoria()[DatosHistoria.HISTORIA.getValue()]) {
                     // Historia 1: Mordor
                     case 1:
-                        Mordor.MordorParte3(personajePrincipal);
+                        Orcos.MordorParte3(personajePrincipal);
                         break;
                     // Historia 2: La rebelion goblin
                     case 2:
-                        LaRebelionGoblin.LaRebelionGoblinParte3(personajePrincipal);
+                        Orcos.LaRebelionGoblinParte3(personajePrincipal);
                         break;
                     // Historia 3: La guerra del clan piel blanca
                     default:

@@ -7,19 +7,6 @@ import java.util.Random;
 
 import clases.PersonajePrinc;
 
-import historias.Elfos.LasRuinasAntiguasDeJistav;
-import historias.Elfos.LosProtectoresDelBosque;
-import historias.Elfos.Zelda;
-import historias.Enanos.ElCodiceMaldito;
-import historias.Enanos.ElPuebloEnanoOwarf;
-import historias.Enanos.LaCreacionDelArtefactoMitico;
-import historias.Humanos.ElGoblinDelTutorial;
-import historias.Humanos.LaGuerraDeReyesHermanos;
-import historias.Humanos.LaMujerDeMorado;
-import historias.Orcos.LaGuerraDelClanPielBlanca;
-import historias.Orcos.LaRebelionGoblin;
-import historias.Orcos.Mordor;
-
 import utilidades.Aleatoriedad;
 import utilidades.TextoLento;
 import utilidades.TextosAscii;
@@ -114,15 +101,15 @@ public class Parte1 {
                     System.out.println("Parte 1.\n");
                     switch (numeroAleatorio) {
                         case 1:// Camino 1: El pueblo de Owarf
-                            ElPuebloEnanoOwarf.ElPuebloEnanoOwarfParte1(elecionIntrahistoria3, personajePrincipal);
+                            Enanos.ElPuebloEnanoOwarfParte1(elecionIntrahistoria3, personajePrincipal);
                             break;
 
                         case 2:// Camino 2: La creación del artefacto mítico
-                            LaCreacionDelArtefactoMitico.LaCreacionDelArtefactoMiticoParte1(personajePrincipal);
+                            Enanos.LaCreacionDelArtefactoMiticoParte1(personajePrincipal);
                             break;
 
                         default:// Camino 3: El codice maldito.
-                            ElCodiceMaldito.ElCodiceMalditoParte1(personajePrincipal);
+                            Enanos.ElCodiceMalditoParte1(personajePrincipal);
                             break;
                     }
 
@@ -136,15 +123,15 @@ public class Parte1 {
                     System.out.println("Parte 1.\n");
                     switch (numeroAleatorio) {
                         case 1:// Camino uno: Zelda
-                            Zelda.ZeldaParte1(personajePrincipal);
+                            Elfos.ZeldaParte1(personajePrincipal);
                             break;
                         case 2:// Camino dos: Los protectores del bosque
-                            LosProtectoresDelBosque.LosProtectoresDelBosqueParte1(elecionIntrahistoria,
+                            Elfos.LosProtectoresDelBosqueParte1(elecionIntrahistoria,
                                     personajePrincipal);
                             break;
 
                         default:// Camino tres: Las ruinas antiguas de Jistav
-                            LasRuinasAntiguasDeJistav.LasRuinasAntiguasDeJistavParte1(elecionIntrahistoria3,
+                            Elfos.LasRuinasAntiguasDeJistavParte1(elecionIntrahistoria3,
                                     personajePrincipal);
                             break;
                     }
@@ -160,15 +147,15 @@ public class Parte1 {
                     System.out.println("Parte 1.\n");
                     switch (numeroAleatorio) {
                         case 1:// Camino uno: La mujer de morado
-                            LaMujerDeMorado.LaMujerDeMoradoParte1(personajePrincipal);
+                            Humanos.LaMujerDeMoradoParte1(personajePrincipal);
                             break;
                         case 2:// Camino dos: La guerra de reyes hermanos
-                            LaGuerraDeReyesHermanos.LaGuerraDeReyesHermanosParte1(elecionIntrahistoria,
+                            Humanos.LaGuerraDeReyesHermanosParte1(elecionIntrahistoria,
                                     elecionIntrahistoria2, elecionIntrahistoria3, personajePrincipal);
                             break;
 
                         default:// Camino tres: El goblin del tutorial
-                            ElGoblinDelTutorial.ElGoblinDelTutorialParte1(personajePrincipal);
+                            Humanos.ElGoblinDelTutorialParte1(personajePrincipal);
                             break;
                     }
                 }
@@ -181,14 +168,14 @@ public class Parte1 {
                     System.out.println("Parte 1.\n");
                     switch (numeroAleatorio) {
                         case 1:// Camino uno: Mordor
-                            Mordor.MordorParte1(personajePrincipal);
+                            Orcos.MordorParte1(personajePrincipal);
                             break;
                         case 2:// Camino dos:El concilio de la muerte
-                            LaRebelionGoblin.LaRebelionGoblinParte1(personajePrincipal);
+                            Orcos.LaRebelionGoblinParte1(personajePrincipal);
                             break;
 
                         default:// Camino tres: La guerra del clan piel blanca
-                            LaGuerraDelClanPielBlanca.LaGuerraDelClanPielBlancaParte1(elecionIntrahistoria,
+                            Orcos.LaGuerraDelClanPielBlancaParte1(elecionIntrahistoria,
                                     personajePrincipal);
                             break;
                     }

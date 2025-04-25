@@ -118,374 +118,354 @@ public abstract class Enanos{
     private static final String EL_PUEBLO_ENANO_OWARF_1_13 = "Después de tus aventuras, te das un paseo por el pueblo para familiarizarte.";
 
     /**
-     * Clase de los Enanos que recoge las partes de la Historia El Pueblo Enano
-     * Owarf
+     * Primera parte de la historia de los enanos; El pueblo enano de Owarf.
+     * <p>
+     * En esta primera parte el jugador se encontrara con un pueblo enano que tiene
+     * una alta discriminacion ante todos los otros seres vivos que pasen por sus
+     * caminos.
+     * 
+     * @param primerDesenlaceBucleSalir
+     * @param segundoDesenlaceBucleSalir
+     * @param elecionIntrahistoria
+     * @param buffer
+     * @see HistoriaDatos
+     * @see PersonajePrinc
      */
-    public class ElPuebloEnanoOwarf extends Enanos {
-        /**
-         * Primera parte de la historia de los enanos; El pueblo enano de Owarf.
-         * <p>
-         * En esta primera parte el jugador se encontrara con un pueblo enano que tiene
-         * una alta discriminacion ante todos los otros seres vivos que pasen por sus
-         * caminos.
-         * 
-         * @param primerDesenlaceBucleSalir
-         * @param segundoDesenlaceBucleSalir
-         * @param elecionIntrahistoria
-         * @param buffer
-         * @see HistoriaDatos
-         * @see PersonajePrinc
-         */
-        public static void ElPuebloEnanoOwarfParte1(
-                String elecionIntrahistoria,
-                PersonajePrinc personajePrincipal)
-                throws IOException, InterruptedException {
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_1);
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_2);
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_3);
+    public static void ElPuebloEnanoOwarfParte1(
+            String elecionIntrahistoria,
+            PersonajePrinc personajePrincipal)
+            throws IOException, InterruptedException {
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_1);
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_2);
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_3);
 
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_4);
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_4);
 
-            elecionIntrahistoria = LectorBuffRead.leer((EL_PUEBLO_ENANO_OWARF_1_5 + "\n"
-                    + EL_PUEBLO_ENANO_OWARF_1_6 + "\n"),
-                    "ayudar", "pasar");
+        elecionIntrahistoria = LectorBuffRead.leer((EL_PUEBLO_ENANO_OWARF_1_5 + "\n"
+                + EL_PUEBLO_ENANO_OWARF_1_6 + "\n"),
+                "ayudar", "pasar");
 
-            if (elecionIntrahistoria.equals("ayudar")) {
+        if (elecionIntrahistoria.equals("ayudar")) {
 
-                elecionIntrahistoria = LectorBuffRead.leer((EL_PUEBLO_ENANO_OWARF_1_5_1 + "\n"
-                        + EL_PUEBLO_ENANO_OWARF_1_5_2 + "\n"),
-                        "hablar", "batalla");
+            elecionIntrahistoria = LectorBuffRead.leer((EL_PUEBLO_ENANO_OWARF_1_5_1 + "\n"
+                    + EL_PUEBLO_ENANO_OWARF_1_5_2 + "\n"),
+                    "hablar", "batalla");
 
-                if (elecionIntrahistoria.equals("hablar")) {
-                    TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_1);
-                    if (personajePrincipal.CombateEntero(Enemigos.MINOTAURO.getVida(), Enemigos.MINOTAURO.getDaño())) {
-                        TextosAscii.setCyan();
-                        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_VICTORIA);
-                    } else {
-                        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_DERROTA);
-                    }
-                } else if (elecionIntrahistoria.equals("batalla")) {
-                    if (personajePrincipal.CombateEntero(Enemigos.MINOTAURO.getVida(), Enemigos.MINOTAURO.getDaño())) {
-                        TextosAscii.setCyan();
-                        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_VICTORIA);
-                    } else {
-                        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_DERROTA);
-                    }
+            if (elecionIntrahistoria.equals("hablar")) {
+                TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_1);
+                if (personajePrincipal.CombateEntero(Enemigos.MINOTAURO.getVida(), Enemigos.MINOTAURO.getDaño())) {
+                    TextosAscii.setCyan();
+                    TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_VICTORIA);
+                } else {
+                    TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_DERROTA);
                 }
-
-            } else if (elecionIntrahistoria.equals("pasar")) {
-                TextoLento.printSlow("Pasas de largo.");
+            } else if (elecionIntrahistoria.equals("batalla")) {
+                if (personajePrincipal.CombateEntero(Enemigos.MINOTAURO.getVida(), Enemigos.MINOTAURO.getDaño())) {
+                    TextosAscii.setCyan();
+                    TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_VICTORIA);
+                } else {
+                    TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_5_1_DERROTA);
+                }
             }
 
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_7);
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_8);
+        } else if (elecionIntrahistoria.equals("pasar")) {
+            TextoLento.printSlow("Pasas de largo.");
+        }
 
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_9);
-            elecionIntrahistoria = LectorBuffRead.leer((EL_PUEBLO_ENANO_OWARF_1_10 + "\n"
-                    + EL_PUEBLO_ENANO_OWARF_1_11 + "\n"
-                    + EL_PUEBLO_ENANO_OWARF_1_12 + "\n"),
-                    "consejo", "representante", "pasas");
-            if (elecionIntrahistoria.equals("consejo")) {
-                TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_10_1);
-                TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_10_2);
-            } else if (elecionIntrahistoria.equals("representante")) {
-                TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_11_3_1);
-                TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_11_3_2);
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_PUEBLO_ENANO_OWARF.getValue(), DatosHistoria.HISTORIA.getValue());// El pueblo enanos owarf
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
-            } else if (elecionIntrahistoria.equals("pasas")) {
-            }
-            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_13);
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_7);
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_8);
+
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_9);
+        elecionIntrahistoria = LectorBuffRead.leer((EL_PUEBLO_ENANO_OWARF_1_10 + "\n"
+                + EL_PUEBLO_ENANO_OWARF_1_11 + "\n"
+                + EL_PUEBLO_ENANO_OWARF_1_12 + "\n"),
+                "consejo", "representante", "pasas");
+        if (elecionIntrahistoria.equals("consejo")) {
+            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_10_1);
+            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_10_2);
+        } else if (elecionIntrahistoria.equals("representante")) {
+            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_11_3_1);
+            TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_11_3_2);
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_PUEBLO_ENANO_OWARF.getValue(), DatosHistoria.HISTORIA.getValue());// El pueblo enanos owarf
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+        } else if (elecionIntrahistoria.equals("pasas")) {
+        }
+        TextoLento.printSlow(EL_PUEBLO_ENANO_OWARF_1_13);
+    }
+
+    /**
+     * Primera parte de la historia de los enanos; La creacion del artefacto mitico,
+     * Los Hornos de Hefesto.
+     * <p>
+     * En esta primera parte el jugador tendra la oportunidad de apreciar uno de los
+     * trabajos
+     * que mas dedicacion merecen, la forja; alli se hara con una posicion que en
+     * futuras partes
+     * tendra que ir mejorando.
+     * 
+     * @param buffer
+     * @see HistoriaDatos
+     * @see PersonajePrinc
+     */
+    public static void LaCreacionDelArtefactoMiticoParte1(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_1);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_3);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_5);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_6);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_7);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_8);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_9);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_10);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_11);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_12);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_13);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_14);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_15);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_16);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_17);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_18);
+        personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+    }
+
+    /**
+     * Segunda parte de la historia de los enanos; La creacion del artefacto mitico,
+     * El Camino del Acero.
+     * <p>
+     * En esta tercera parte el jugador se enfrenta a un peligro cotidiano para los
+     * herreros,
+     * una pelea contra el hierro.
+     * 
+     * @param primerDesenlaceBucleSalir
+     * @param buffer
+     * 
+     * @see HistoriaDatos
+     * @see Metodos
+     */
+    public static void LaCreacionDelArtefactoMiticoParte2(
+            PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_1);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_3);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.pruebaAptitud(1, 0, 4)) {
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5_VICTORIA);
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_6);
+            LectorBuffRead.continuarHistoria();
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+        } else {
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5_DERROTA);
+            LectorBuffRead.continuarHistoria();
+        }
+
+    }
+
+    /**
+     * Tercera parte de la historia de los enanos; La creacion del artefacto mitico,
+     * El Fuego de la Ambición.
+     * <p>
+     * En esta tercera parte el jugador se enfrenta a un peligro cotidiano para los
+     * herreros,
+     * una pelea contra el hierro, y , a diferencia de la anterior parte, contra el
+     * mas mitico metal,
+     * el mithril.
+     * 
+     * @param primerDesenlaceBucleSalir
+     * @param buffer
+     * 
+     * @see HistoriaDatos
+     * @see Metodos
+     * @see PersonajePrinc
+     */
+    public static void LaCreacionDelArtefactoMiticoParte3(
+            PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_1);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_3);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_5);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_6);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_7);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.pruebaAptitud(2, 0, 4)) {
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_7_VICTORIA);
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_8);
+            LectorBuffRead.continuarHistoria();
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_9);
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_10);
+            LectorBuffRead.continuarHistoria();
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+        } else {
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_7_DERROTA);
+            LectorBuffRead.continuarHistoria();
         }
     }
 
     /**
-     * Clase de los Enanos que recoge las partes de la Historia La Creacion del
-     * Artefacto Mitico
+     * Cuarta parte de la historia de los enanos; La creacion del artefacto mitico,
+     * El Enfrentamiento con La Forja.
+     * <p>
+     * En esta cuarta parte final el jugador tiene la ultima tarea de enfrentarse
+     * contra la forja y tomar su puesto como verdadero herrero.
+     * 
+     * @param buffer
+     * 
+     * @see HistoriaDatos
+     * @see clases
+     * @see Batalla
+     * @see PersonajePrinc
      */
-    public class LaCreacionDelArtefactoMitico extends Enanos {
-
-        /**
-         * Primera parte de la historia de los enanos; La creacion del artefacto mitico,
-         * Los Hornos de Hefesto.
-         * <p>
-         * En esta primera parte el jugador tendra la oportunidad de apreciar uno de los
-         * trabajos
-         * que mas dedicacion merecen, la forja; alli se hara con una posicion que en
-         * futuras partes
-         * tendra que ir mejorando.
-         * 
-         * @param buffer
-         * @see HistoriaDatos
-         * @see PersonajePrinc
-         */
-        public static void LaCreacionDelArtefactoMiticoParte1(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_1);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_2);
+    public static void LaCreacionDelArtefactoMiticoParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_1);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_3);
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_5);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.CombateEntero(Enemigos.LA_FORJA.getVida(), Enemigos.LA_FORJA.getDaño())) {
+            TextosAscii.setCyan();
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_5_VICTORIA);
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_6);
             LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_3);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_4);
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_7);
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_8);
             LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_5);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_6);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_7);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_8);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_9);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_10);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_11);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_12);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_13);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_14);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_15);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_16);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_17);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_1_18);
             personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
+        } else {
+            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_5_DERROTA);
+            LectorBuffRead.continuarHistoria();
         }
+    }
 
-        /**
-         * Segunda parte de la historia de los enanos; La creacion del artefacto mitico,
-         * El Camino del Acero.
-         * <p>
-         * En esta tercera parte el jugador se enfrenta a un peligro cotidiano para los
-         * herreros,
-         * una pelea contra el hierro.
-         * 
-         * @param primerDesenlaceBucleSalir
-         * @param buffer
-         * 
-         * @see HistoriaDatos
-         * @see Metodos
-         */
-        public static void LaCreacionDelArtefactoMiticoParte2(
-                PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_1);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_3);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.pruebaAptitud(1, 0, 4)) {
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5_VICTORIA);
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_6);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
-            } else {
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_2_5_DERROTA);
-                LectorBuffRead.continuarHistoria();
-            }
+    /**
+     * Primera parte de la historia de los enanos; El Codice Maldito, La Noche de la
+     * Cosecha.
+     * <p>
+     * En esta primera parte el jugador se encuentra con un pequeño poblado con
+     * gente muy amable
+     * y una historia que relata un futuro muy oscuro.
+     * 
+     * @see HistoriaDatos
+     * @see PersonajePrinc
+     */
+    public static void ElCodiceMalditoParte1(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_1);
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_3);
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_5);
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_6);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_7);
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_8);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_9);
+        TextoLento.printSlow(EL_CODICE_MALDITO_1_10);
+        LectorBuffRead.continuarHistoria();
+        personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
+    }
 
+    public static void ElCodiceMalditoParte2(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(EL_CODICE_MALDITO_2_1);
+        TextoLento.printSlow(EL_CODICE_MALDITO_2_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_2_3);
+        TextoLento.printSlow(EL_CODICE_MALDITO_2_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_2_5);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.CombateEntero(Enemigos.GOBLIN_GRUPO.getVida(), Enemigos.GOBLIN_GRUPO.getDaño())) {
+            TextosAscii.setCyan();
+            TextoLento.printSlow(EL_CODICE_MALDITO_2_5_VICTORIA);
+            LectorBuffRead.continuarHistoria();
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
+        } else {
+            TextoLento.printSlow(EL_CODICE_MALDITO_2_5_DERROTA);
+            LectorBuffRead.continuarHistoria();
         }
+    }
 
-        /**
-         * Tercera parte de la historia de los enanos; La creacion del artefacto mitico,
-         * El Fuego de la Ambición.
-         * <p>
-         * En esta tercera parte el jugador se enfrenta a un peligro cotidiano para los
-         * herreros,
-         * una pelea contra el hierro, y , a diferencia de la anterior parte, contra el
-         * mas mitico metal,
-         * el mithril.
-         * 
-         * @param primerDesenlaceBucleSalir
-         * @param buffer
-         * 
-         * @see HistoriaDatos
-         * @see Metodos
-         * @see PersonajePrinc
-         */
-        public static void LaCreacionDelArtefactoMiticoParte3(
-                PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_1);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_2);
+    public static void ElCodiceMalditoParte3(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(EL_CODICE_MALDITO_3_1);
+        TextoLento.printSlow(EL_CODICE_MALDITO_3_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_3_3);
+        TextoLento.printSlow(EL_CODICE_MALDITO_3_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_3_5);
+        TextoLento.printSlow(EL_CODICE_MALDITO_3_6);
+        LectorBuffRead.continuarHistoria();
+
+        if (personajePrincipal.CombateEntero(Enemigos.LICH.getVida(), Enemigos.LICH.getDaño())) {
+            TextosAscii.setCyan();
+            TextoLento.printSlow(EL_CODICE_MALDITO_3_6_VICTORIA);
+            TextoLento.printSlow(EL_CODICE_MALDITO_3_7);
             LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_3);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_4);
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
+        personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
+        } else {
+            TextoLento.printSlow(EL_CODICE_MALDITO_3_6_DERROTA);
             LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_5);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_6);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_7);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.pruebaAptitud(2, 0, 4)) {
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_7_VICTORIA);
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_8);
-                LectorBuffRead.continuarHistoria();
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_9);
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_10);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-            } else {
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_3_7_DERROTA);
-                LectorBuffRead.continuarHistoria();
-            }
         }
+    }
 
-        /**
-         * Cuarta parte de la historia de los enanos; La creacion del artefacto mitico,
-         * El Enfrentamiento con La Forja.
-         * <p>
-         * En esta cuarta parte final el jugador tiene la ultima tarea de enfrentarse
-         * contra la forja y tomar su puesto como verdadero herrero.
-         * 
-         * @param buffer
-         * 
-         * @see HistoriaDatos
-         * @see clases
-         * @see Batalla
-         * @see PersonajePrinc
-         */
-        public static void LaCreacionDelArtefactoMiticoParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_1);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_2);
+    public static void ElCodiceMalditoParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
+        TextoLento.printSlow(EL_CODICE_MALDITO_4_1);
+        TextoLento.printSlow(EL_CODICE_MALDITO_4_2);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_4_3);
+        TextoLento.printSlow(EL_CODICE_MALDITO_4_4);
+        LectorBuffRead.continuarHistoria();
+        TextoLento.printSlow(EL_CODICE_MALDITO_4_5);
+        LectorBuffRead.continuarHistoria();
+        if (personajePrincipal.CombateEntero(Enemigos.TITAN_DEL_RAGNAROK.getVida(),
+                Enemigos.TITAN_DEL_RAGNAROK.getDaño())) {
+            TextosAscii.setCyan();
+            TextoLento.printSlow(EL_CODICE_MALDITO_4_5_VICTORIA);
+            TextoLento.printSlow(EL_CODICE_MALDITO_4_6);
             LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_3);
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_4);
+            TextoLento.printSlow(EL_CODICE_MALDITO_4_7);
             LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_5);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.CombateEntero(Enemigos.LA_FORJA.getVida(), Enemigos.LA_FORJA.getDaño())) {
-                TextosAscii.setCyan();
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_5_VICTORIA);
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_6);
-                LectorBuffRead.continuarHistoria();
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_7);
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_8);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_LA_CREACION_DEL_ARTEFACTO_MITICO.getValue(), DatosHistoria.HISTORIA.getValue());// La creacion del artefacto mitico
+            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
+            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
             personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-            } else {
-                TextoLento.printSlow(LA_CREACION_DEL_ARTEFACTO_MITICO_4_5_DERROTA);
-                LectorBuffRead.continuarHistoria();
-            }
+        } else {
+            TextoLento.printSlow(EL_CODICE_MALDITO_4_5_DERROTA);
+            LectorBuffRead.continuarHistoria();
         }
     }
-
-    /**
-     * Clase de los Enanos que recoge las partes de la Historia Los Enanos de Oro
-     */
-    public class ElCodiceMaldito extends Enanos {
-
-        /**
-         * Primera parte de la historia de los enanos; El Codice Maldito, La Noche de la
-         * Cosecha.
-         * <p>
-         * En esta primera parte el jugador se encuentra con un pequeño poblado con
-         * gente muy amable
-         * y una historia que relata un futuro muy oscuro.
-         * 
-         * @see HistoriaDatos
-         * @see PersonajePrinc
-         */
-        public static void ElCodiceMalditoParte1(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_1);
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_3);
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_5);
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_6);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_7);
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_8);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_9);
-            TextoLento.printSlow(EL_CODICE_MALDITO_1_10);
-            LectorBuffRead.continuarHistoria();
-            personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE1.getValue());// Parte 1 terminada
-        }
-
-        public static void ElCodiceMalditoParte2(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(EL_CODICE_MALDITO_2_1);
-            TextoLento.printSlow(EL_CODICE_MALDITO_2_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_2_3);
-            TextoLento.printSlow(EL_CODICE_MALDITO_2_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_2_5);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.CombateEntero(Enemigos.GOBLIN_GRUPO.getVida(), Enemigos.GOBLIN_GRUPO.getDaño())) {
-                TextosAscii.setCyan();
-                TextoLento.printSlow(EL_CODICE_MALDITO_2_5_VICTORIA);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE2.getValue());// Parte 2 terminada
-            } else {
-                TextoLento.printSlow(EL_CODICE_MALDITO_2_5_DERROTA);
-                LectorBuffRead.continuarHistoria();
-            }
-        }
-
-        public static void ElCodiceMalditoParte3(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(EL_CODICE_MALDITO_3_1);
-            TextoLento.printSlow(EL_CODICE_MALDITO_3_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_3_3);
-            TextoLento.printSlow(EL_CODICE_MALDITO_3_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_3_5);
-            TextoLento.printSlow(EL_CODICE_MALDITO_3_6);
-            LectorBuffRead.continuarHistoria();
-
-            if (personajePrincipal.CombateEntero(Enemigos.LICH.getVida(), Enemigos.LICH.getDaño())) {
-                TextosAscii.setCyan();
-                TextoLento.printSlow(EL_CODICE_MALDITO_3_6_VICTORIA);
-                TextoLento.printSlow(EL_CODICE_MALDITO_3_7);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
-            personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE3.getValue());// Parte 3 terminada
-            } else {
-                TextoLento.printSlow(EL_CODICE_MALDITO_3_6_DERROTA);
-                LectorBuffRead.continuarHistoria();
-            }
-        }
-
-        public static void ElCodiceMalditoParte4(PersonajePrinc personajePrincipal) throws IOException, InterruptedException {
-            TextoLento.printSlow(EL_CODICE_MALDITO_4_1);
-            TextoLento.printSlow(EL_CODICE_MALDITO_4_2);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_4_3);
-            TextoLento.printSlow(EL_CODICE_MALDITO_4_4);
-            LectorBuffRead.continuarHistoria();
-            TextoLento.printSlow(EL_CODICE_MALDITO_4_5);
-            LectorBuffRead.continuarHistoria();
-            if (personajePrincipal.CombateEntero(Enemigos.TITAN_DEL_RAGNAROK.getVida(),
-                    Enemigos.TITAN_DEL_RAGNAROK.getDaño())) {
-                TextosAscii.setCyan();
-                TextoLento.printSlow(EL_CODICE_MALDITO_4_5_VICTORIA);
-                TextoLento.printSlow(EL_CODICE_MALDITO_4_6);
-                LectorBuffRead.continuarHistoria();
-                TextoLento.printSlow(EL_CODICE_MALDITO_4_7);
-                LectorBuffRead.continuarHistoria();
-                personajePrincipal.setHistoria(Razas.Enano.getValue(), DatosHistoria.HISTORIA_RAZA.getValue());// Enanos
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_EL_CODICE_MALDITO.getValue(), DatosHistoria.HISTORIA.getValue());// El codice maldito
-                personajePrincipal.setHistoria(DatosHistoria.HISTORIA_TERMINADA.getValue(), DatosHistoria.HISTORIA_PARTE4.getValue());// Parte 4 terminada
-            } else {
-                TextoLento.printSlow(EL_CODICE_MALDITO_4_5_DERROTA);
-                LectorBuffRead.continuarHistoria();
-            }
-        }
-    }
-
 }

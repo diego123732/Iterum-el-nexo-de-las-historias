@@ -37,7 +37,7 @@ public class GuardadoPartida {
      * @throws IOException
      * @throws InterruptedException
      */
-    public static int elegirPartida() throws IOException, InterruptedException {
+    public static int ElegirPartida() throws IOException, InterruptedException {
         int numeroPartida = 0;
         if (!new File(PATH_GUARDADO_DATOS).exists()) {
             numeroPartida = 1;
