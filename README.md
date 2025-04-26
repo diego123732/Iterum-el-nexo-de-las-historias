@@ -1,18 +1,16 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Iterum es un videojuego narrativo para un solo jugador, ambientado en un universo de fantasía con una estética profundamente inspirada en lo mágico, lo ancestral y lo esotérico. Su diseño conceptual se apoya en una atmósfera misteriosa, donde los secretos del pasado, los rituales arcanos y los poderes ocultos convergen para ofrecer una experiencia inmersiva y única.
 
-## Folder Structure
+El estilo de juego de Iterum se basa en la estructura de los roguelike clásicos, pero se presenta bajo un formato totalmente textual, evocando las aventuras interactivas de antaño. Cada partida es una nueva historia, con decisiones que no solo afectan el destino del personaje, sino que también abren o cierran líneas narrativas enteras, permitiendo así una enorme rejugabilidad. La dificultad no se encuentra solamente en los combates o los eventos aleatorios, sino también en la complejidad de elecciones morales, estratégicas y argumentales que el jugador debe tomar constantemente.
 
-The workspace contains two folders by default, where:
+El juego ofrece múltiples caminos posibles, con una narrativa no lineal donde el entorno, los personajes secundarios y los elementos mágicos reaccionan de forma dinámica a las decisiones del jugador. Cada aventura es única gracias a un sistema de generación de eventos y escenarios que varía en cada intento, consolidando la esencia "roguelike": la muerte es permanente y cada error puede significar el inicio de una nueva historia con consecuencias totalmente distintas.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Además, Iterum se construye sobre un trasfondo mitológico ficticio con gran riqueza simbólica, donde los jugadores pueden descubrir fragmentos del lore del mundo mediante textos, objetos, símbolos y encuentros con entidades mágicas. La exploración del conocimiento arcano es tan importante como la progresión del personaje, y muchas veces, saber cuándo no actuar es tan crucial como lanzarse al combate.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+En definitiva, Iterum es una aventura intensa e introspectiva, que combina jugabilidad estratégica, narrativa envolvente y exploración mágica. Pensado para los amantes del rol clásico, las historias ramificadas y el misterio, este título invita al jugador a perderse –y encontrarse– una y otra vez en su mundo misterioso y cambiante.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+Para utilizar el ejecutable jar hay que situarse en la consola en la carpeta donde este situado el ejecutable y ejecutar este comando: 'java -jar "Version 1.8 Iterum el nexo de las historias.jar"' sin las comillas simples
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Enlace GitHub repositorio publico: https://github.com/diego123732/Iterum-el-nexo-de-las-historias
+Enlace para copiar el repositorio: https://github.com/diego123732/Iterum-el-nexo-de-las-historias.git

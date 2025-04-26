@@ -1,5 +1,8 @@
 package historias;
 
+/**
+ * Enum que guarda los datos utilizados en las historias para que se entienda mejor el codigo
+ */
 public enum DatosHistoria {
     // --- HISTORIA DATOS --- //
     HISTORIA_RAZA(0),

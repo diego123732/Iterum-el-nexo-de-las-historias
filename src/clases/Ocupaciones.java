@@ -1,5 +1,8 @@
 package clases;
 
+/**
+ * Enum con la serie de ocupaciones que puede tener el personaje principal
+ */
 public enum Ocupaciones {
     Tanque(new int[]{7,11,7,8,12,10}, 
     new String[]{"Mazo","Escudo","Yelmo cónico","Cota de malla","Zapatos de cuero"}),

@@ -9,6 +9,9 @@ import utilidades.LectorBuffRead;
 import utilidades.TextoLento;
 import utilidades.TextosAscii;
 
+/**
+ * Clase en la que se crean las historias de los Elfos
+ */
 public abstract class Elfos {
 
     private static final String ZELDA_1_1 = "Vas caminando por una pradera, ante ti a lo lejos puedes apreciar un gran castillo.";

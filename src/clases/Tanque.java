@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import utilidades.TextosAscii;
 
+/**
+ * Personaje principal enfocado en la quinta estadistica, la constitucion
+ */
 public class Tanque extends PersonajePrinc {
     public Tanque (String nombre, Razas raza, Partida partida) {
         super(

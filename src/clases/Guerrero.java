@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import utilidades.TextosAscii;
 
+/**
+ * Personaje principal enfocado en la segunda estadistica, la fuerza
+ */
 public class Guerrero extends PersonajePrinc {
     public Guerrero(String nombre, Razas raza, Partida partida) {
         super(

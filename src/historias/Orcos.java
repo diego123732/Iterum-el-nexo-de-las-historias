@@ -8,6 +8,9 @@ import utilidades.LectorBuffRead;
 import utilidades.TextoLento;
 import utilidades.TextosAscii;
 
+/**
+ * Clase en la que se crean las historias de los Orcos
+ */
 public abstract class Orcos{
     private static final String MORDOR_1_1 = "Mientras caminas por el bosque empiezas a oler algo moribundo, putrefacto, sumido en tu curiosidad te intentas acercar al origen.";
 private static final String MORDOR_1_2 = "De repente empiezas a escuchar muchos caballos corriendo rápidamente hacia ti, te asustas y te escondes detrás de unos árboles.";

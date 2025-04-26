@@ -3,7 +3,9 @@ package clases;
 import java.io.IOException;
 
 import utilidades.TextosAscii;
-
+/**
+ * Personaje principal enfocado en la sexta estadistica, la sabiduria
+ */
 public class Paladin extends PersonajePrinc {
 
     public Paladin(String nombre, Razas raza, Partida partida) {

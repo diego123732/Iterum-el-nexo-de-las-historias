@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import utilidades.TextosAscii;
 
+/**
+ * Personaje principal enfocado en la primera estadistica, la destreza
+ */
 public class Asesino extends PersonajePrinc {
     public Asesino(String nombre, Razas raza, Partida partida) {
         super(

@@ -1,5 +1,8 @@
 package utilidades;
 
+/**
+ * Clase con una serie de metodos que devuelven tenstos ascii
+ */
 public class TextosAscii {
     private static final String COLOR_NEGRO = "\u001B[30m";
     private static final String COLOR_ROJO = "\u001B[31m";

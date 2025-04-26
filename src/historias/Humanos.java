@@ -9,6 +9,9 @@ import clases.Ocupaciones;
 import clases.PersonajePrinc;
 import clases.Razas;
 
+/**
+ * Clase en la que se crean las historias de los Humanos
+ */
 public abstract class Humanos{
     private static final String GUERRA_DE_REYES_HERMANOS_1_1 = "Llegas al reino de Aetheria, uno de los reinos más grandes del continente humano.";
     private static final String GUERRA_DE_REYES_HERMANOS_1_2 = "Te das una vuelta por la capital, a donde vas primero.";

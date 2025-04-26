@@ -8,6 +8,9 @@ import java.time.format.DateTimeFormatter;
 
 import clases.Partida;
 
+/**
+ * Clase en la que se juntan una serie de metodos para el guardado de partida en la base de datos
+ */
 public class ManipulacionBD {
 
     /**

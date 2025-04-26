@@ -17,6 +17,9 @@ import clases.Razas;
 import clases.Tanque;
 
 
+/**
+ * Clase en la que se junta toda la historia, aqui es donde se hace la historia principal
+ */
 public class Historia {
     
     public static void MensajeBase () {

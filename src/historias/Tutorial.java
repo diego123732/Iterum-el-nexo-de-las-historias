@@ -16,6 +16,9 @@ import clases.PersonajePrinc;
 import clases.Razas;
 import clases.Tanque;
 
+/**
+ * Clase en la que se forma el tutorial del videojuego
+ */
 public class Tutorial {
     /**
      * Metodo que devuelve por pantalla una tabla formateada con las estadisticas de cada uno de los personajes

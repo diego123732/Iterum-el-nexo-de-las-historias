@@ -24,6 +24,9 @@ import clases.PersonajePrinc;
 import clases.Razas;
 import clases.Tanque;
 
+/**
+ * Metodo que se encarga tanto de hacer el guardado como de cargar las partidas del archivo de texto plano txt
+ */
 public class GuardadoPartida {
     private static final String PATH_GUARDADO_DATOS = "src\\datosguardar\\DatosIterum.txt";
 

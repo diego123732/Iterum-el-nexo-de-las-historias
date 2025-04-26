@@ -1,5 +1,8 @@
 package historias;
 
+/**
+ * Enum con todos los enemigos contra los que se puede enfrentar el jugador, con su vida y daño
+ */
 public enum Enemigos {
     // Razas principales
 

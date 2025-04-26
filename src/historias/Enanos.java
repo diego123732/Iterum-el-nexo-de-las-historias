@@ -8,6 +8,9 @@ import utilidades.LectorBuffRead;
 import utilidades.TextoLento;
 import utilidades.TextosAscii;
 
+/**
+ * Clase en la que se crean las historias de los Enanos
+ */
 public abstract class Enanos{
     private static final String EL_CODICE_MALDITO_1_1 = "Llegas a Durkazad una pequeña ciudad de los enanos en donde destaca su hermosa personalidad y sus fiestas muy animadas.";
     private static final String EL_CODICE_MALDITO_1_2 = "Llegas de noche pero notas que hay mucho ruido, llegas justo a tiempo para las fiestas de la cosecha.";

@@ -1,6 +1,8 @@
 package utilidades;
 
-
+/**
+ * Clase que tiene un metodo para simular que el texto que aparece por pantalla aparezca lentamente
+ */
 public class TextoLento {
     /**
      * Metodo que muestra el texto que se le mete por parametro de 

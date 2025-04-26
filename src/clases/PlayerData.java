@@ -1,5 +1,8 @@
 package clases;
 
+/**
+ * Enum con datos auxiliares que ayudan para que se entienda mejor el codigo
+ */
 public enum PlayerData {
     // --- ESTADÍSTICAS ---
     DESTREZA(0),

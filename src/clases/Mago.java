@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import utilidades.TextosAscii;
 
+/**
+ * Personaje principal enfocado en la tercera estadistica, la inteligencia
+ */
 public class Mago extends PersonajePrinc {
     public Mago(String nombre, Razas raza, Partida partida) {
         super(

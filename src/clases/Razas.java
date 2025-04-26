@@ -1,5 +1,8 @@
 package clases;
 
+/**
+ * Enum con todas las razas que puede jugar el personaje principal y sus valores en la historia
+ */
 public enum Razas {
     Elfo(1),
     Humano(2),
